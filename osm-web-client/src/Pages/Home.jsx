@@ -1,8 +1,9 @@
 import React from "react";
 import banner from "../Assets/Photos/banner.jpg"
-import "../App.css";
+import "../Assets/Styles/css/leadmark.css"
 
 const HomePage = () => {
+/*
   return (
     <div className="App">
       <header className="App-header">
@@ -12,6 +13,10 @@ const HomePage = () => {
         </p>
       </header>
     </div>
+  );
+*/
+  return (
+    <></>
   );
 };
 
