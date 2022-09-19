@@ -28,7 +28,7 @@
   --black: #000;
   --gray: #6c757d;
   --gray-dark: #1b1b1b;
-  --primary: #ff6e42;
+  --primary: #178fc9;
   --secondary: var(--gray);
   --success: var(--green);
   --info: var(--cyan);
@@ -11421,10 +11421,10 @@ textarea.form-control {
 
 .header {
   position: relative;
-  height: 100vh;
-  min-height: 500px;
-  background: url(../imgs/header.jpg) no-repeat center center fixed;
-  background-size: cover;
+  min-height: 100vh;
+  background: url(../../Photos/banner.jpg) no-repeat center center fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -11479,7 +11479,7 @@ textarea.form-control {
 }
 
 .header .shape svg path {
-  fill: #fff;
+  fill: var(--primary);
 }
 
 @media (max-width: 1199.98px) {
@@ -11624,7 +11624,7 @@ textarea.form-control {
 
 .section.has-img-bg {
   position: relative;
-  background: url(../imgs/section.jpg) no-repeat center top fixed;
+  background: url(../../Photos/banner.jpg) no-repeat center top fixed;
   background-size: cover;
   color: #fff;
 }

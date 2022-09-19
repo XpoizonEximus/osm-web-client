@@ -1,0 +1,111 @@
+Navbar
+- homepage
+- proiecte
+- evenimente
+- magazin online
+- contact
+
+Menu
+- homepage
+- proiecte
+    - quick list
+- evenimente
+- echipa
+    - Consiliul director
+    - Reprezentani de an
+- parteneri si sponsori
+- magazin online
+- diverse
+    - calculatoare medii
+    - site UMF
+    - infostud
+- regulamente si ghiduri
+- FAQ
+- contact
+
+Footer
+- copyright
+- social media
+- realizator
+
+
+Homepage
+- banner
+- despre noi
+- cateva proiecte
+- cateva evenimente
+- cateva chestii din shop
+- explore more
+
+Proiecte
+- banner
+- o lista a proiectelor detaliata
+
+Pentru fiecare proiect
+- mini-banner
+- descriere
+- (video)
+- contact
+
+Evenimente
+- calendar
+- lista
+
+Unelte
+- mini tab-uri
+
+Calculatoare medii
+- Formular interactiv cu 3 resp 6 butoane
+
+Echipa
+- mini-banner
+- mini tab-uri
+
+Consiliul director
+- mini-banner
+- mini tab-uri:
+    - poza
+    - nume
+    - (scurta descriere a postului)
+    - contact (mail)
+
+Reprezentanti
+- 3 butoane cu specializări
+- mini tab-uri
+    - poza
+    - nume
+    - contact (mail)
+
+Parteneri si sponsori
+- lista cu poza (si nume (si site))
+
+Regulamente și ghiduri
+- mini-banner
+- lista blunt cu download
+
+FAQ
+- mini-banner
+- lista Q&a
+
+Contact
+- VPE
+    - poza
+    - mail
+    - telefon?
+
+
+Admin
+- #formular autentificare
+- dashboard
+- admins deta
+- volunteer data
+- volunteer requests
+
+SignIn
+- formular in centru
+
+LogIn
+- formular in centru
+
+Profil
+- tot ce trebe
