@@ -1,0 +1,12 @@
+:root {
+  --primary: #2596be;
+  --primary-hover: #00668b;
+  --secondary: #8ae8ff;
+  --secondary-hover: #75d5ff;
+
+  --dark: #354a54;
+  --light: #99aebb;
+
+  --font-family-title: Georgia, serif;
+  --font-family-text: Verdana, sans-serif;
+}
