@@ -19,11 +19,9 @@
 }
 
 .index.fullscreen .index.banner img {
-  position: relative;
-  display: flex;
   object-fit: scale-down;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
 
   padding-left: 20px;
   padding-right: 20px;

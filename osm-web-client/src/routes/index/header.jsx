@@ -2,11 +2,14 @@ import React from "react";
 import "./header.css";
 
 import banner from "../../assets/photos/banner-edited.png";
-import MouseScrollDown from "../../components/MouseScrollDown";
+import MouseScrollDown from "../../components/mouseScrollDown";
+
+import Navigation from "../../layouts/navigation";
 
 function Header(props) {
   return (
     <header className="index fullscreen">
+      <Navigation />
       <div className="index banner">
         <img src={banner} alt="banner" />
       </div>

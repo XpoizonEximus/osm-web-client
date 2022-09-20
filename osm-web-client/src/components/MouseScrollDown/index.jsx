@@ -1,7 +1,7 @@
 import React from "react";
-import "./index.css";
+import "./mouseScrollDown.css";
 
-function MouseScrollDown(props) {
+function MouseScrollDown({ color }) {
   return (
     <div className="scrolldown">
       <div className="chevrons">
