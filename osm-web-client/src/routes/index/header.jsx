@@ -14,7 +14,7 @@ function Header(props) {
         <img src={banner} alt="banner" />
       </div>
       <h4 className="index headerText">
-        ORGANIZATIA STUDENTILOR MEDICINISTI DIN CLUJ
+        ORGANIZAȚIA STUDENȚILOR MEDICINIȘTI DIN CLUJ
       </h4>
       <div className="index headerMouseScrollDown">
         <MouseScrollDown />

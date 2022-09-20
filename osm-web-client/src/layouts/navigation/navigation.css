@@ -3,6 +3,7 @@
 .navigation {
   --bar-height: 50px;
   --bar-color: var(--dark);
+  z-index: 1;
 }
 
 .navigation.sticky {

@@ -1,2 +1,54 @@
 @import url("../../const/const.css");
 
+.index .title {
+  padding: 70px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.index .about .title {
+  color: white;
+  background-color: var(--primary);
+}
+
+.index .about .main {
+  background-color: var(--primary);
+}
+
+.index .about .main .content {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.index .about .aboutPart {
+  color: white;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1em;
+}
+
+.index .about .aboutPart h4 {
+  font-family: var(--font-family-text);
+}
+
+.index .about .aboutPart p {
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 40px;
+}
+
+.index .about .aboutPart .container {
+  height: 400px;
+  padding-left: 100px;
+}
+
+.index .about .aboutPart .container img {
+  height: 100%;
+}

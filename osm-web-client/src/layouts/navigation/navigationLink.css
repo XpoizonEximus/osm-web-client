@@ -15,6 +15,6 @@
 
 .navigationLink:hover {
   cursor: pointer;
-  background-color: var(--primary-hover);
+  background-color: var(--secondary-hover);
   font-size: 1.08em;
 }
