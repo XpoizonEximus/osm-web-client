@@ -56,16 +56,17 @@
   font-family: var(--font-family-title);
   font-size: 1.3em;
   font-weight: bold;
-  color: var(--dark);
+  color: white;
   text-decoration: none;
 
   padding: 10px 60px 10px 60px;
-  background-color: var(--secondary);
+  background-color: transparent;
+  border: 3px solid var(--secondary);
   border-radius: 20px;
   transition: background-color 0.5s;
 }
 
 .card1 a:hover {
-  background-color: var(--secondary-hover);
+  background-color: var(--secondary);
   cursor: pointer;
 }

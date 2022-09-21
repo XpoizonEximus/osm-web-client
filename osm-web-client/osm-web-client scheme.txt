@@ -30,9 +30,9 @@ Footer
 
 
 Homepage
-- banner
-- despre noi
-- cateva proiecte
+/- banner
+/- despre noi
+/- cateva proiecte
 - cateva evenimente
 - cateva chestii din shop
 - explore more

@@ -1,1 +1,66 @@
 @import url(../../const/const.css);
+
+#footer {
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--dark);
+}
+
+#footer .content {
+  padding-left: 20;
+  padding-right: 20;
+}
+
+#footer .logo-container {
+  height: 200px;
+}
+
+#footer .logo-container > img {
+  height: 95%;
+  transition: height 0.5s;
+}
+
+#footer .logo-container:hover > img {
+  height: 100%;
+}
+
+#footer .media {
+  padding: 30px 10px 10px 10px;
+}
+
+#footer .right {
+  padding-left: 30px;
+}
+
+#footer .menu {
+  background-color: gray;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1px;
+}
+
+#footer .menu-section {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--dark);
+}
+
+#footer .menu-section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#footer .menu-section a {
+  font-family: var(--font-family-title);
+  color: white;
+  padding: 10px;
+}
+
+#footer .copyright {
+  padding: 60px 10px 30px 10px;
+  background-color: var(--dark);
+}
+
