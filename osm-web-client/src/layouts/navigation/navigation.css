@@ -1,69 +1,53 @@
 @import url("../../const/const.css");
 
-.navigation {
+#navigation {
   --bar-height: 50px;
   --bar-color: var(--dark);
-  z-index: 1;
-}
 
-.navigation.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+  position: fixed;
   height: var(--bar-height);
   width: 100%;
+  z-index: 1;
+
   background-color: var(--bar-color);
 }
 
-.navigation.container {
+#navigation > .container {
   width: calc(100% - 2 * 20px);
   height: 100%;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
   margin: 0px 20px 0px 20px;
 }
 
-.navigation.logo.container {
+#navigation .logo-container {
   --offset: 10px;
   --size: calc(2 * var(--bar-height) - 2 * var(--offset));
+
   height: var(--size);
-  min-height: var(--size);
   width: var(--size);
-  min-width: var(--size);
-  border-radius: calc(var(--size) / 2);
   position: relative;
   top: calc(var(--bar-height) / 2);
-  border: 3px solid var(--bar-color);
+
   background-color: white;
+  border: 3px solid var(--bar-color);
+  border-radius: calc(var(--size) / 2);
 }
 
-.navigation.logo.container .logo {
-  --margin: 5px;
-  object-fit: scale-down;
-  box-sizing: border-box;
+#navigation .logo-container > img {
+  --margin: 3px;
+
   width: calc(100% - 2 * var(--margin));
   margin: var(--margin);
 }
 
-.navigation.links.container {
+#navigation .links-container {
+  height: 100%;
   flex: 1;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
-.navigation.auth.container {
+#navigation .auth-container {
   flex: 0;
-  margin-left: 20px;
-  display: flex;
   position: relative;
-
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
   color: white;
+  margin-left: 20px;
 }

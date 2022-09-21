@@ -1,0 +1,46 @@
+@import url(../../const/const.css);
+
+#index #about {
+  margin-top: 20px;
+}
+#index #about .main {
+  background-color: var(--primary);
+}
+
+#index #about .content {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  gap: 0px;
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#index #about .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  font-size: 1em;
+  color: white;
+}
+
+#index #about .container > h4 {
+  font-family: var(--font-family-title);
+}
+
+#index #about .container > p {
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 40px;
+}
+
+#index #about .container > .img-container {
+  max-height: 100%;
+}
+
+#index #about .container > .img-container > img {
+  object-fit: scale-down;
+}

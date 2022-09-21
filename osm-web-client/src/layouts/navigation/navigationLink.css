@@ -1,20 +1,17 @@
 @import url(../../const/const.css);
 
-.navigationLink {
-  color: white;
-  margin: 1px;
+.navigation-link {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
   font-family: var(--font-family-title);
+  color: white;
   font-weight: bold;
+  text-decoration: none;
+  margin: 1px;
   transition: background-color 0.5s, font-size 0.5s;
 }
 
-.navigationLink:hover {
-  cursor: pointer;
-  background-color: var(--secondary-hover);
+.navigation-link:hover {
   font-size: 1.08em;
+  background-color: var(--secondary-hover);
+  cursor: pointer;
 }

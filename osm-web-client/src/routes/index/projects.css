@@ -1,0 +1,58 @@
+@import url("../../const/const.css");
+
+#index #projects {
+  color: var(--primary-hover);
+  background-color: transparent;
+}
+
+#index #projects .content {
+  max-width: 1200px;
+
+  text-align: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#index #projects .content > .title {
+  text-shadow: 0px 5px 10px rgb(176, 176, 176);
+}
+
+#index #projects .content > p {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 0px 5px 10px rgb(176, 176, 176);
+}
+
+#index #projects .content .grid-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 380px 380px 380px;
+
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+#index #projects .content > a {
+  max-width: 100%;
+  align-self: center;
+
+  font-family: var(--font-family-title);
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+
+  background-color: var(--primary-hover);
+  border-radius: 40px;
+  box-shadow: 0px 5px 10px 0px grey;
+
+  transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
+}
+
+#index #projects .content > a:hover {
+  cursor: pointer;
+  transform: translate(0px, -10px);
+  background-color: var(--dark);
+  box-shadow: 0px 10px 15px 0px grey;
+}

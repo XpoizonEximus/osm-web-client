@@ -6,9 +6,9 @@ function NavigationLink({ link = "/", children = "Link", padding = "10px" }) {
     <a
       href={link}
       style={{ paddingLeft: padding, paddingRight: padding }}
-      class="navigationLink"
+      className="navigation-link flex"
     >
-      <div>{children}</div>
+      {children}
     </a>
   );
 }

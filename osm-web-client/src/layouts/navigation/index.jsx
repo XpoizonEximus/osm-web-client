@@ -6,18 +6,18 @@ import logo from "../../assets/photos/banner-edited.png";
 
 function Navigation(props) {
   return (
-    <div class="navigation sticky">
-      <div class="navigation container">
-        <div class="navigation logo container">
-          <img src={logo} class="logo" alt="logo" />
+    <div id="navigation">
+      <div className="container flex row">
+        <div className="logo-container flex">
+          <img src={logo} alt="logo" />
         </div>
-        <div class="navigation links container">
+        <div className="links-container flex row">
           <NavigationLink padding="50px">Proiecte</NavigationLink>
           <NavigationLink padding="50px">Evenimente</NavigationLink>
           <NavigationLink padding="50px">Magazin Online</NavigationLink>
           <NavigationLink padding="50px">Contact</NavigationLink>
         </div>
-        <div class="navigation auth container">Autentificare</div>
+        <div class="auth-container flex row">Autentificare</div>
       </div>
     </div>
   );

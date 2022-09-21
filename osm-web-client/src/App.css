@@ -5,47 +5,47 @@
 }
 
 body {
-  background-color: white;
-  color: var(--primary);
-  font-size: 1em;
   font-family: var(--font-family-text);
+  font-size: 1em;
+  color: var(--primary);
 
+  background-color: white;
   background-image: url("./assets/photos/background-tile.png");
   background-attachment: fixed;
   background-repeat: repeat;
 }
 
 h1 {
-  font-size: 6em;
   font-family: var(--font-family-title);
+  font-size: 6em;
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  font-size: 5em;
   font-family: var(--font-family-title);
+  font-size: 5em;
   margin: 0;
   padding: 0;
 }
 
 h3 {
-  font-size: 4em;
   font-family: var(--font-family-title);
+  font-size: 4em;
   margin: 0;
   padding: 0;
 }
 
 h4 {
-  font-size: 3em;
   font-family: var(--font-family-title);
+  font-size: 3em;
   margin: 0;
   padding: 0;
 }
 
 h5 {
-  font-size: 2em;
   font-family: var(--font-family-title);
+  font-size: 2em;
   margin: 0;
   padding: 0;
 }
@@ -60,4 +60,18 @@ h5 {
 .content {
   align-items: center;
   justify-content: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
 }
