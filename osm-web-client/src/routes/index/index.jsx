@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 
 import Header from "./header";
+import Footer from "../../layouts/footer";
 import Card1 from "../../components/cards/card1";
 
 import bannerNew from "../../assets/photos/banner-new.png";
@@ -50,8 +51,7 @@ const IndexPage = () => {
               >
                 Tutori pentru Noua Generație este proiectul care ”îi aduce la
                 zi” pe boboci cu tot ce trebuie să cunoască pentru a începe
-                viața de student cu dreptul. Tutorii sunt stâlpii comunității
-                studențești...
+                viața de student cu dreptul. Tutorii sunt stâlpii comunității...
               </Card1>
 
               <Card1
@@ -61,15 +61,13 @@ const IndexPage = () => {
               >
                 Știm că poate sună puțin ciudat.. trupa de teatru a facultății
                 de medicină, dar cu toate astea o parte dintre noi ne-am spus să
-                încercăm! Și suntem împreună în treaba asta (de oameni mai
-                puțin...
+                încercăm! Și suntem împreună în treaba asta (de oameni mai...
               </Card1>
 
               <Card1 img={teddyLogo} title="Teddy Bear Hospital" href="/">
                 Teddy Bear Hospital este un proiect cu și despre copii, care
                 are, în principal, scopul de a-i obișnui pe cei mici cu halatul
-                alb și mersul la medic. Acest proiect se bazează pe educarea
-                studenților...
+                alb și mersul la medic. Acest proiect se bazează pe educarea...
               </Card1>
 
               <Card1
@@ -89,8 +87,7 @@ const IndexPage = () => {
               >
                 ZEM este un proiect care încearcă să ofere studenților din toți
                 anii ocazia de a aprofunda cunoștințele și abilitățile dobândite
-                conform curriculei universitare. Anul acesta vom depăși
-                barierele și...
+                conform curriculei universitare. Anul acesta vom...
               </Card1>
 
               <Card1 img={aaLogo} title="Artistic Anatomy" href="/">
@@ -99,9 +96,11 @@ const IndexPage = () => {
                 Universitaţii de Arte într-o comunitate cultural-artistică al...
               </Card1>
             </div>
+            <a href="/">VEZI TOATE PROIECTELE »</a>
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
