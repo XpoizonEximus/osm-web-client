@@ -32,6 +32,7 @@
   position: relative;
   margin-bottom: 100px;
   text-align: center;
+  font-weight: bold;
 }
 
 .index.headerMouseScrollDown {

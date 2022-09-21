@@ -17,12 +17,14 @@
 }
 
 .index .about .main .content {
+  width: 800px;
+  max-width: 800px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .index .about .aboutPart {
@@ -35,7 +37,7 @@
 }
 
 .index .about .aboutPart h4 {
-  font-family: var(--font-family-text);
+  font-family: var(--font-family-title);
 }
 
 .index .about .aboutPart p {
@@ -51,4 +53,30 @@
 
 .index .about .aboutPart .container img {
   height: 100%;
+}
+
+.index .projects {
+  background-color: white;
+  color: var(--primary-hover);
+}
+
+.index .projects .content {
+  width: 1200px;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.index .projects .content p {
+  font-size: 1.5em;
+}
+
+.index .projects .container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 400px 400px 400px;
 }
