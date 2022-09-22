@@ -1,0 +1,25 @@
+@import url(../../../const/const.css);
+
+#navigation .menu ul li {
+  width: 100%;
+}
+
+#navigation .menu ul li a {
+  width: 100%;
+  font-family: var(--font-family-title);
+  text-decoration: none;
+  padding: 5px 20px 5px 30px;
+}
+
+#navigation .menu ul li a:hover {
+  background-image: linear-gradient(to right, transparent, var(--primary));
+}
+
+#navigation .menu ul li a .title {
+  color: white;
+  flex: 1;
+}
+
+#navigation .menu ul li a .guillets {
+  color: white;
+}

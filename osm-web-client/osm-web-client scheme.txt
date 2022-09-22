@@ -10,30 +10,29 @@ Menu
 - proiecte
     - quick list
 - evenimente
+- magazin online
+- calculatoare medii
+- site UMF
+- infostud
 - echipa
     - Consiliul director
     - Reprezentani de an
 - parteneri si sponsori
-- magazin online
-- diverse
-    - calculatoare medii
-    - site UMF
-    - infostud
 - regulamente si ghiduri
 - FAQ
 - contact
 
-Footer
-- copyright
-- social media
-- realizator
+/Footer
+/- copyright
+/- social media
+/- realizator
 
 
 Homepage
 /- banner
 /- despre noi
 /- cateva proiecte
-- cateva evenimente
+- cateva evenimente?
 - cateva chestii din shop
 - explore more
 
@@ -51,10 +50,7 @@ Evenimente
 - calendar
 - lista
 
-Unelte
-- mini tab-uri
-
-Calculatoare medii
+Calculator medie
 - Formular interactiv cu 3 resp 6 butoane
 
 Echipa

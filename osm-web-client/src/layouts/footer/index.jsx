@@ -69,10 +69,6 @@ function Footer() {
               © Copyright 1990 - 2022 |{" "}
               <i>Organizaţia Studenţilor Medicinişti - OSM Cluj</i> | Toate
               drepturile rezervate
-              <br />
-              <br />
-              Realizat în parteneriat cu: <i>Radu-Andrei Vaida</i> și{" "}
-              <i>Serenus Dragoș</i>.
             </div>
           </div>
         </div>

@@ -1,0 +1,67 @@
+@import url(../../../const/const.css);
+
+#navigation .menu {
+  z-index: 5;
+}
+
+#navigation .menu .menu-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  perspective: 1000px;
+
+  background-color: var(--bar-color);
+  padding: var(--bar-height) 0px 10px 0px;
+  margin: 0px 0px 0px 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#navigation .menu.colapsed .menu-dropdown {
+  animation: menu-dropup-animation 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+#navigation .menu.expanded .menu-dropdown {
+  display: block;
+  animation: menu-dropdown-animation 300ms ease-in forwards;
+  transform-origin: top center;
+}
+
+@keyframes menu-dropdown-animation {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes menu-dropup-animation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+#navigation .menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navigation .menu ul hr {
+  width: calc(100% - 2 * 40px);
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.75),
+    transparent
+  );
+}

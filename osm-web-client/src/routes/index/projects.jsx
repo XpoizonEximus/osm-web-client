@@ -18,7 +18,7 @@ function Projects() {
           <h3 class="title">Proiecte</h3>
           <p>Inițiative care aduc un plus orașului și societății</p>
           <div className="grid-container flex">
-            <Card1 img={tpngLogo} title="Tutori pentru noua generatie" href="/">
+            <Card1 img={tpngLogo} title="Tutori pentru noua generație" href="/">
               Tutori pentru Noua Generație este proiectul care ”îi aduce la zi”
               pe boboci cu tot ce trebuie să cunoască pentru a începe viața de
               student cu dreptul. Tutorii sunt stâlpii comunității...

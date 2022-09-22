@@ -1,15 +1,31 @@
 import React from "react";
+import { useState } from "react";
 import "./navigation.css";
 
 import NavigationLink from "./navigationLink";
+import Menu from "./menu/";
+
 import logo from "../../assets/photos/banner-edited.png";
+import menuLogo from "../../assets/photos/menu-logo.png";
 
 function Navigation(props) {
+  const [isMenuVisible, setMenuVisibility] = useState(false);
+
   return (
     <div id="navigation">
+      <Menu isVisible={isMenuVisible} />
       <div className="container flex row">
         <div className="logo-container flex">
           <img src={logo} alt="logo" />
+        </div>
+        <div className="menu-icon-container flex">
+          <button
+            onClick={(e) => {
+              setMenuVisibility(!isMenuVisible);
+            }}
+          >
+            <img src={menuLogo} alt="logo" />
+          </button>
         </div>
         <div className="links-container flex row">
           <NavigationLink padding="50px">Proiecte</NavigationLink>
@@ -17,7 +33,7 @@ function Navigation(props) {
           <NavigationLink padding="50px">Magazin Online</NavigationLink>
           <NavigationLink padding="50px">Contact</NavigationLink>
         </div>
-        <div class="auth-container flex row">Autentificare</div>
+        <div className="auth-container flex row">Autentificare</div>
       </div>
     </div>
   );
