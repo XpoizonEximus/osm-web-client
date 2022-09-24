@@ -15,7 +15,7 @@ function Projects() {
     <section id="projects">
       <div className="main">
         <div className="content flex column">
-          <h3 class="title">Proiecte</h3>
+          <h3 className="title">Proiecte</h3>
           <p>Inițiative care aduc un plus orașului și societății</p>
           <div className="grid-container flex">
             <Card1 img={tpngLogo} title="Tutori pentru noua generație" href="/">

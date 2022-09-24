@@ -1,7 +1,38 @@
+#Structura paginilor
+
+Homepage                                osmcluj.ro/
+    - Proiecte                                    /proiecte 
+        - Pentru fiecare proiect                           /[nume proiect]
+    - Evenimente                                  /evenimente
+    - Magazin online                              /shop
+        - ???                                          /[???]
+    - Resurse                                     /resurse
+        - Site info-stud
+        - Ghidul bobocului                        /boboc
+        - Legături externe                        /links
+        - Regulamente                             /regulamente
+            - OSM                                             /osm
+            - Deplasări externe                               /deplasari-externe
+            - Carta universității                             /carta
+        - Giduri                                  /ghiduri
+            - Erasmus                                     /erasmus
+            - Licență                                     /licenta
+        - Calculator medie                        /calculator-medie
+        - Amfiteatre și săli                      /amfiteatre-sali
+        - FAQ                                     /faq
+    - Echipa                                      /echipa
+    - Parteneri și sponsori                       /parteneri-sponsori
+    - Contact                                     /contact
+
+
+
+
+Detalii
+
 Navbar
 - homepage
 - proiecte
-- evenimente
+- resurse
 - magazin online
 - contact
 
@@ -15,8 +46,6 @@ Menu
 - site UMF
 - infostud
 - echipa
-    - Consiliul director
-    - Reprezentani de an
 - parteneri si sponsori
 - regulamente si ghiduri
 - FAQ
@@ -105,3 +134,11 @@ LogIn
 
 Profil
 - tot ce trebuie
+
+
+resurse: 
+ghiduri erasmus, licenta, 
+regulamente osm, deplasari externe
+FAQ
+calculator medie
+harta amfiteatre si sali

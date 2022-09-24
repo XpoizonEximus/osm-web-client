@@ -12,14 +12,33 @@
 }
 
 #navigation .menu ul li a:hover {
-  background-image: linear-gradient(to right, transparent, var(--primary));
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--primary)
+  );
 }
 
 #navigation .menu ul li a .title {
-  color: white;
+  color: var(--font-color);
   flex: 1;
 }
 
 #navigation .menu ul li a .guillets {
-  color: white;
+  color: var(--font-color);
+}
+
+#navigation .menu a > .list {
+  position: absolute;
+  left: calc(100% - 10px);
+}
+
+#navigation .menu a:hover > .list > .list-container {
+  display: block;
+  border-radius: 10px;
+  background-color: var(--secondary);
+}
+
+#navigation .menu a > .list > .list-container {
+  display: none;
 }

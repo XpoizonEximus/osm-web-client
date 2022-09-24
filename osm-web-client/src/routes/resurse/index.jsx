@@ -1,7 +1,7 @@
 import React from "react";
 
-function UneltePage() {
+function ResursePage() {
   return <h1>Unelte</h1>;
 }
 
-export default UneltePage;
+export default ResursePage;

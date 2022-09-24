@@ -1,7 +1,7 @@
 import React from "react";
 
-function ContactPage() {
+function BobocPage() {
   return <h1>Contact</h1>;
 }
 
-export default ContactPage;
+export default BobocPage;
