@@ -57,6 +57,10 @@
   font-family: var(--font-family-title);
   color: white;
   padding: 10px;
+  text-decoration: none;
+}
+#footer .menu-section a:hover {
+  text-decoration: underline;
 }
 
 #footer .copyright {

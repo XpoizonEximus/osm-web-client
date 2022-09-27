@@ -1,8 +1,5 @@
 @import url(../../const/const.css);
 
-#index #about {
-  margin-top: 20px;
-}
 #index #about .main {
   background-color: var(--primary);
 }
@@ -10,11 +7,11 @@
 #index #about .content {
   max-width: 800px;
   display: grid;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 400px 600px;
   gap: 0px;
 
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 #index #about .container {
@@ -27,20 +24,21 @@
   color: white;
 }
 
+#index #about .container.span {
+  grid-column: 1 / span 2;
+}
+
 #index #about .container > h4 {
   font-family: var(--font-family-title);
+  padding-left: 40px;
 }
 
 #index #about .container > p {
   font-size: 1.3em;
+  text-align: justify;
+}
+
+#index #about .container > p.left {
+  padding: 40px 0px 0px 0px;
   font-style: italic;
-  padding: 40px;
-}
-
-#index #about .container > .img-container {
-  max-height: 100%;
-}
-
-#index #about .container > .img-container > img {
-  object-fit: scale-down;
 }

@@ -1,0 +1,19 @@
+@import url("../../../const/const.css");
+
+.link-button-1 {
+  color: var(--dark);
+  text-decoration: none;
+  padding: 15px 40px 15px 40px;
+  background-color: var(--secondary);
+  border-radius: 30px;
+  font-family: var(--font-family-title);
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: all 0.5s;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.link-button-1:hover {
+  background-color: white;
+  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.5);
+}

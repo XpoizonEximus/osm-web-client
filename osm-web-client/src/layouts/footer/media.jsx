@@ -1,7 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./media.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 function Media() {
   return (
@@ -16,6 +17,18 @@ function Media() {
         <span class="tooltip">Instagram</span>
         <span>
           <FontAwesomeIcon icon={faInstagram} />
+        </span>
+      </li>
+      <li class="icon linkedin">
+        <span class="tooltip">LinkedIn</span>
+        <span>
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </span>
+      </li>
+      <li class="icon youtube">
+        <span class="tooltip">YouTube</span>
+        <span>
+          <FontAwesomeIcon icon={faYoutube} />
         </span>
       </li>
     </ul>

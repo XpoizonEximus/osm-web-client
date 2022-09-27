@@ -8,10 +8,19 @@
   text-decoration: none;
   margin: 1px;
   transition: background-color 0.5s, font-size 0.5s;
+  font-size: 1.1em;
 }
 
 .navigation-link:hover {
-  font-size: 1.08em;
+  font-size: 1.18em;
   background-color: var(--secondary-hover);
   cursor: pointer;
+}
+
+.navigation-link.highlight {
+  background-color: #33B5DB;
+}
+
+.navigation-link.highlight:hover {
+  background-color: var(--secondary-hover);
 }

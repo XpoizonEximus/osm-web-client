@@ -1,15 +1,16 @@
 @import url("../../const/const.css");
 
 #navigation {
-  --bar-height: 50px;
-  --bar-color: var(--secondary);
-  --font-color: var(--dark);
+  --bar-height: 60px;
+  --bar-color: var(--primary);
+  --font-color: white;
 
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 10;
 
-  box-shadow: 0px 5px 5px 0px gray;
+  box-shadow: 0px 3px 5px 0px rgba(127, 127, 127, 0.5);
 }
 
 #navigation > .container {
@@ -43,7 +44,7 @@
   border-radius: calc(var(--size) / 2);
   overflow: hidden;
 
-  box-shadow: 7px 7px 10px 0px gray;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 #navigation .logo-container img {
@@ -54,7 +55,7 @@
 }
 #navigation .logo-container img,
 #navigation .menu-icon-container img {
-  --margin: 3px;
+  --margin: 5px;
   margin: var(--margin);
 }
 

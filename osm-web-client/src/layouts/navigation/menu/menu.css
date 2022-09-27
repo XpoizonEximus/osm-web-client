@@ -9,7 +9,7 @@
   perspective: 1000px;
 
   background-color: var(--bar-color);
-  box-shadow: 7px 7px 10px 0px gray;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 #navigation .menu .menu-dropdown {

@@ -1,0 +1,22 @@
+@import url("../../../const/const.css");
+
+.card2 {
+  color: white;
+  height: 100px;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  justify-content: flex-start;
+  transition: all 0.5s;
+}
+
+.card2:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--primary);
+}
+
+.card2 .icon-container {
+  margin: 20px;
+}

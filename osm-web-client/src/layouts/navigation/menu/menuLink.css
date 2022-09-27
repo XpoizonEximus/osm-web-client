@@ -8,27 +8,36 @@
   width: 100%;
   font-family: var(--font-family-title);
   text-decoration: none;
-  padding: 5px 20px 5px 30px;
+  padding: 5px 20px 5px 20px;
 }
 
 #navigation .menu ul li a:hover {
   background-image: linear-gradient(
     to right,
     transparent,
-    var(--primary)
+    var(--primary-hover)
   );
 }
 
 #navigation .menu ul li a .title {
   color: var(--font-color);
   flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+#navigation .menu ul li a .icon-container {
+  width: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 #navigation .menu ul li a .guillets {
   color: var(--font-color);
 }
 
-#navigation .menu a > .list {
+#navigation .menu a .list {
   position: absolute;
   left: calc(100% - 10px);
 }
@@ -36,7 +45,7 @@
 #navigation .menu a:hover > .list > .list-container {
   display: block;
   border-radius: 10px;
-  background-color: var(--secondary);
+  background-color: var(--bar-color);
 }
 
 #navigation .menu a > .list > .list-container {

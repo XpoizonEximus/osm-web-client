@@ -1,18 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./menuLink.css";
 
-function MenuLink({ title = "", href = "/", children }) {
-  const pos = useRef();
-  const [position, setPosition] = useState(20);
-
-  useEffect(() => {
-    setPosition(pos.current.offsetTop);
-  }, [pos]);
-
+function MenuLink({ title = "", icon, href = "/", top = 0, children }) {
   return (
-    <li className={title} ref={pos}>
-      <a href={href} className="flex row">
-        <div className="title">{title}</div>
+    <li className={title}>
+      <Link to={href} className="flex row">
+        <div className="title">
+          <span className="icon-container">{icon}</span>
+          {title}
+        </div>
         {typeof children != typeof undefined && children.length > 0 ? (
           <div className="guillets">»</div>
         ) : (
@@ -22,7 +19,7 @@ function MenuLink({ title = "", href = "/", children }) {
           <div
             className="list"
             style={{
-              top: position + 5,
+              top: `${top}px`,
             }}
           >
             <ul className="list-container">
@@ -34,7 +31,7 @@ function MenuLink({ title = "", href = "/", children }) {
         ) : (
           <></>
         )}
-      </a>
+      </Link>
     </li>
   );
 }

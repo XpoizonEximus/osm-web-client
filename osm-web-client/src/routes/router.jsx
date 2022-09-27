@@ -1,7 +1,8 @@
 import React from "react";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
+import Layout from "../layouts/layout"
 
-import { PATH } from "../const/const";
+import { PATH } from "../const/const.js";
 
 import IndexPage from "./index";
 import NotFound404Page from "./notFound404";
@@ -11,7 +12,6 @@ import EvenimentePage from "./evenimente";
 import ShopPage from "./shop";
 
 import ResursePage from "./resurse";
-import BobocPage from "./resurse/boboc";
 import RegulamentePage from "./resurse/regulamente";
 import GhiduriPage from "./resurse/ghiduri";
 import LinksPage from "./resurse/links";
@@ -26,7 +26,7 @@ import ContactPage from "./contact";
 function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Outlet />}>
+      <Route path="/" element={<Layout />}>
         <Route path={PATH.index} element={<IndexPage />} />
         <Route path="*" element={<NotFound404Page />} />
 
@@ -37,7 +37,6 @@ function Router() {
         <Route path={PATH.evenimente.index} element={<EvenimentePage />} />
         <Route path={PATH.shop.index} element={<ShopPage />} />
         <Route path={PATH.resurse.index} element={<ResursePage />} />
-        <Route path={PATH.resurse.boboc.index} element={<BobocPage />} />
         <Route
           path={PATH.resurse.regulamente.index.concat("/*")}
           element={<RegulamentePage />}

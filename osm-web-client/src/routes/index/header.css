@@ -1,21 +1,15 @@
 @import url("../../const/const.css");
 
 #index #header {
-  min-height: 100vh;
   z-index: 0;
 }
 
 #index #header .banner-container {
-  flex: 1;
-  padding-top: 250px;
+  max-width: 100%;
 }
 
 #index #header .banner-container > img {
   width: 100%;
-  object-fit: scale-down;
-
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 #index #header .title {

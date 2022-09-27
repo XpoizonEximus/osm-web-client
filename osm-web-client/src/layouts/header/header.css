@@ -1,0 +1,9 @@
+@import url("../../const/const.css");
+
+#header .img-container {
+  display: flex;
+}
+
+#header .img-container img {
+  width: 100%;
+}

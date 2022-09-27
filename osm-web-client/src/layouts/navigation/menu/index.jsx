@@ -2,6 +2,7 @@ import React from "react";
 import "./menu.css";
 
 import MenuLink from "./menuLink";
+import * as Icons from "../../../const/icons"
 
 function Menu({ isVisible, setVisibility }) {
   return (
@@ -15,11 +16,12 @@ function Menu({ isVisible, setVisibility }) {
       }}
     >
       <ul className="menu-dropdown flex column list-container">
-        <MenuLink title="Proiecte">
-          <MenuLink title="Tutori pentru noua generație" />
+        <MenuLink title="Evenimente" icon={Icons.EvenimenteIcon}/>
+        <MenuLink title="Proiecte" icon={Icons.ProiecteIcon} top={77}>
+          <MenuLink title="Tutori pentru noua generație"/>
           <MenuLink title="MEDSTIC - Trupa de teatru a facultăţii" />
           <MenuLink title="Teddy Bear Hospital" />
-          <MenuLink title="Disaster Medicine Preparedness" />
+          <MenuLink title="Disaster Medicine Preparedness"/>
           <MenuLink title="Zilele Educaţiei Medicale" />
           <MenuLink title="Artistic Anatomy" />
           <MenuLink title="Medici pentru tine" />
@@ -42,28 +44,28 @@ function Menu({ isVisible, setVisibility }) {
           <MenuLink title="Transmed" />
           <MenuLink title="Împreună pentru sănătate" />
         </MenuLink>
-        <MenuLink title="Evenimente" />
+        <MenuLink title="Shop" icon={Icons.ShopIcon} />
         <hr />
-        <MenuLink title="Magazin Online" />
-        <hr />
-        <MenuLink title="Site UMF" href="http://www.umfcluj.ro/" />
-        <MenuLink title="Site Info-stud" />
-        <MenuLink title="Ghiduri">
-          <MenuLink title="Erasmus" />
-          <MenuLink title="Licență" />
+        <MenuLink title="FAQ" icon={Icons.FaqIcon} />
+        <MenuLink title="Ghiduri" icon={Icons.GhiduriIcon} top={180}>
+          <MenuLink title="Ghidul Bobocului" icon={Icons.GhiduriIcon} />
+          <MenuLink title="Erasmus" icon={Icons.GhiduriIcon} />
+          <MenuLink title="Licență" icon={Icons.GhiduriIcon} />
         </MenuLink>
-        <MenuLink title="Regulamente">
-          <MenuLink title="OSM" />
-          <MenuLink title="Deplasări externe" />
+        <MenuLink title="Regulamente" icon={Icons.RegulamenteIcon} top={208}>
+          <MenuLink title="OSM" icon={Icons.RegulamenteIcon} />
+          <MenuLink title="Deplasări externe" icon={Icons.RegulamenteIcon} />
         </MenuLink>
-        <MenuLink title="Calculator medie" />
-        <MenuLink title="Amfiteatre și săli" />
-        <MenuLink title="FAQ" />
+        <MenuLink title="Calculator medie" icon={Icons.CalculatorMedieIcon} />
+        <MenuLink title="Amfiteatre și săli" icon={Icons.AmfiteatreSaliIcon} />
+        <MenuLink title="Site Emsys Info-stud" icon={Icons.LinksIcon} />
+        <MenuLink title="Legături externe" icon={Icons.LinksIcon}>
+          <MenuLink title="Site UMF" icon={Icons.LinksIcon} href="/" />
+        </MenuLink>
         <hr />
-        <MenuLink title="Echipa" />
-        <MenuLink title="Parteneri și Sponsori" />
-        <hr />
-        <MenuLink title="Contact" />
+        <MenuLink title="Parteneri și Sponsori" icon={Icons.ParteneriIcon} />
+        <MenuLink title="Echipa" icon={Icons.EchipaIcon} />
+        <MenuLink title="Contact" icon={Icons.ContactIcon} />
       </ul>
     </div>
   );

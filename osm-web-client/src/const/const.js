@@ -8,9 +8,9 @@ export const PATH = {
   index: "/",
   proiecte: { index: "/proiecte" },
   evenimente: { index: "/evenimente" },
+  shop: { index: "/shop" },
   resurse: {
-    index: "/resurse",
-    boboc: { index: "/boboc" },
+    index: "resurse",
     regulamente: {
       index: "/regulamente",
       osm: { index: "/osm" },
@@ -21,6 +21,7 @@ export const PATH = {
       index: "/ghiduri",
       erasmus: { index: "/erasmus" },
       licenta: { index: "/licenta" },
+      boboc: { index: "/boboc" },
     },
     legaturiExterne: { index: "/links" },
     calculatorMedie: { index: "/calculator-medie" },

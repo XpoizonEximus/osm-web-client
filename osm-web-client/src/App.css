@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family-text);
   font-size: 1em;
   color: var(--primary);
 
   background-color: white;
-  background-image: url("./assets/photos/background-tile.png");
   background-attachment: fixed;
   background-repeat: repeat;
 }
