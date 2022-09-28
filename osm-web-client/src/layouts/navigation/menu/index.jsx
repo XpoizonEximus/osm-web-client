@@ -53,6 +53,7 @@ function Menu({ isVisible, setVisibility }) {
           <MenuLink title="Licență" icon={Icons.GhiduriIcon} />
         </MenuLink>
         <MenuLink title="Regulamente" icon={Icons.RegulamenteIcon} top={208}>
+          <MenuLink title="Carta universității" icon={Icons.RegulamenteIcon} />
           <MenuLink title="OSM" icon={Icons.RegulamenteIcon} />
           <MenuLink title="Deplasări externe" icon={Icons.RegulamenteIcon} />
         </MenuLink>

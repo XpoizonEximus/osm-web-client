@@ -1,0 +1,25 @@
+@import url("../../../const/const.css");
+
+.ghiduri #header .title {
+  padding: 0px;
+}
+
+.ghiduri #header .subtitle {
+  font-size: 1.5em;
+}
+
+.ghiduri .main {
+  background-color: var(--primary);
+}
+
+.ghiduri .content {
+  max-width: 1200px;
+
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 380px 380px 380px;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+

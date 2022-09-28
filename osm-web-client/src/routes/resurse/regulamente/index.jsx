@@ -28,6 +28,7 @@ function RegulamentePage() {
       </Header>
       <section id="content" className="main" ref={regulamenteContent}>
         <div className="content">
+          <Card2 title="Carta Universității" icon={RegulamenteIcon} />
           <Card2 title="OSM" icon={RegulamenteIcon} />
           <Card2 title="Deplasări externe" icon={RegulamenteIcon} />
         </div>

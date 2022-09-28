@@ -1,13 +1,13 @@
 import React from "react";
-import { Routes, Route} from "react-router-dom";
-import Layout from "../layouts/layout"
+import { Routes, Route } from "react-router-dom";
+import Layout from "../layouts/layout";
 
 import { PATH } from "../const/const.js";
 
 import IndexPage from "./index";
 import NotFound404Page from "./notFound404";
 
-import ProiectePage from "./proiecte";
+import ProiecteRouter from "./proiecte";
 import EvenimentePage from "./evenimente";
 import ShopPage from "./shop";
 
@@ -31,18 +31,18 @@ function Router() {
         <Route path="*" element={<NotFound404Page />} />
 
         <Route
-          path={PATH.proiecte.index.concat("/*")}
-          element={<ProiectePage />}
+          path={PATH.proiecte.index.concat("*")}
+          element={<ProiecteRouter />}
         />
         <Route path={PATH.evenimente.index} element={<EvenimentePage />} />
         <Route path={PATH.shop.index} element={<ShopPage />} />
         <Route path={PATH.resurse.index} element={<ResursePage />} />
         <Route
-          path={PATH.resurse.regulamente.index.concat("/*")}
+          path={PATH.resurse.regulamente.index.concat("*")}
           element={<RegulamentePage />}
         />
         <Route
-          path={PATH.resurse.ghiduri.index.concat("/*")}
+          path={PATH.resurse.ghiduri.index.concat("*")}
           element={<GhiduriPage />}
         />
         <Route
