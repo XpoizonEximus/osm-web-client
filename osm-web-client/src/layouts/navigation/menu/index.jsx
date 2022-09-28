@@ -2,7 +2,9 @@ import React from "react";
 import "./menu.css";
 
 import MenuLink from "./menuLink";
-import * as Icons from "../../../const/icons"
+import * as Icons from "../../../const/icons";
+
+import { PATH, LINKS } from "../../../const/const";
 
 function Menu({ isVisible, setVisibility }) {
   return (
@@ -16,12 +18,21 @@ function Menu({ isVisible, setVisibility }) {
       }}
     >
       <ul className="menu-dropdown flex column list-container">
-        <MenuLink title="Evenimente" icon={Icons.EvenimenteIcon}/>
-        <MenuLink title="Proiecte" icon={Icons.ProiecteIcon} top={77}>
-          <MenuLink title="Tutori pentru noua generație"/>
+        <MenuLink
+          title="Evenimente"
+          icon={Icons.EvenimenteIcon}
+          href={PATH.evenimente.index}
+        />
+        <MenuLink
+          title="Proiecte"
+          icon={Icons.ProiecteIcon}
+          href={PATH.proiecte.index}
+          top={77}
+        >
+          <MenuLink title="Tutori pentru noua generație" />
           <MenuLink title="MEDSTIC - Trupa de teatru a facultăţii" />
           <MenuLink title="Teddy Bear Hospital" />
-          <MenuLink title="Disaster Medicine Preparedness"/>
+          <MenuLink title="Disaster Medicine Preparedness" />
           <MenuLink title="Zilele Educaţiei Medicale" />
           <MenuLink title="Artistic Anatomy" />
           <MenuLink title="Medici pentru tine" />
@@ -44,29 +55,68 @@ function Menu({ isVisible, setVisibility }) {
           <MenuLink title="Transmed" />
           <MenuLink title="Împreună pentru sănătate" />
         </MenuLink>
-        <MenuLink title="Shop" icon={Icons.ShopIcon} />
+        <MenuLink title="Shop" icon={Icons.ShopIcon} href={PATH.shop.index} />
         <hr />
-        <MenuLink title="FAQ" icon={Icons.FaqIcon} />
-        <MenuLink title="Ghiduri" icon={Icons.GhiduriIcon} top={180}>
+        <MenuLink
+          title="FAQ"
+          icon={Icons.FaqIcon}
+          href={PATH.resurse.faq.index}
+        />
+        <MenuLink
+          title="Ghiduri"
+          icon={Icons.GhiduriIcon}
+          href={PATH.resurse.ghiduri.index}
+          top={180}
+        >
           <MenuLink title="Ghidul Bobocului" icon={Icons.GhiduriIcon} />
           <MenuLink title="Erasmus" icon={Icons.GhiduriIcon} />
           <MenuLink title="Licență" icon={Icons.GhiduriIcon} />
         </MenuLink>
-        <MenuLink title="Regulamente" icon={Icons.RegulamenteIcon} top={208}>
+        <MenuLink
+          title="Regulamente"
+          icon={Icons.RegulamenteIcon}
+          href={PATH.resurse.regulamente.index}
+          top={208}
+        >
           <MenuLink title="Carta universității" icon={Icons.RegulamenteIcon} />
           <MenuLink title="OSM" icon={Icons.RegulamenteIcon} />
           <MenuLink title="Deplasări externe" icon={Icons.RegulamenteIcon} />
         </MenuLink>
-        <MenuLink title="Calculator medie" icon={Icons.CalculatorMedieIcon} />
-        <MenuLink title="Amfiteatre și săli" icon={Icons.AmfiteatreSaliIcon} />
+        <MenuLink
+          title="Calculator medie"
+          icon={Icons.CalculatorMedieIcon}
+          href={PATH.resurse.calculatorMedie.index}
+        />
+        <MenuLink
+          title="Amfiteatre și săli"
+          icon={Icons.AmfiteatreSaliIcon}
+          href={PATH.resurse.amfiteatreSali.index}
+        />
         <MenuLink title="Site Emsys Info-stud" icon={Icons.LinksIcon} />
-        <MenuLink title="Legături externe" icon={Icons.LinksIcon}>
-          <MenuLink title="Site UMF" icon={Icons.LinksIcon} href="/" />
+        <MenuLink
+          title="Legături externe"
+          icon={Icons.LinksIcon}
+          href={PATH.resurse.legaturiExterne.index}
+          top={320}
+        >
+          <MenuLink title="Site UMF" icon={Icons.LinksIcon} />
         </MenuLink>
         <hr />
-        <MenuLink title="Parteneri și Sponsori" icon={Icons.ParteneriIcon} />
-        <MenuLink title="Echipa" icon={Icons.EchipaIcon} />
-        <MenuLink title="Contact" icon={Icons.ContactIcon} />
+        <MenuLink
+          title="Parteneri și Sponsori"
+          icon={Icons.ParteneriIcon}
+          href={PATH.parteneri.index}
+        />
+        <MenuLink
+          title="Echipa"
+          icon={Icons.EchipaIcon}
+          href={PATH.echipa.index}
+        />
+        <MenuLink
+          title="Contact"
+          icon={Icons.ContactIcon}
+          href={PATH.contact.index}
+        />
       </ul>
     </div>
   );

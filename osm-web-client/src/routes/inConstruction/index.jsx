@@ -1,6 +1,6 @@
 import React from "react";
 
-function NotFound404Page() {
+function InConstructionPage() {
   return (
     <h1
       style={{
@@ -10,9 +10,9 @@ function NotFound404Page() {
         justifyContent: "center",
       }}
     >
-      404 Not found
+      În construcție
     </h1>
   );
 }
 
-export default NotFound404Page;
+export default InConstructionPage;

@@ -10,12 +10,12 @@ function MenuLink({ title = "", icon, href = "/", top = 0, children }) {
           <span className="icon-container">{icon}</span>
           {title}
         </div>
-        {typeof children != typeof undefined && children.length > 0 ? (
+        {typeof children != typeof undefined ? (
           <div className="guillets">»</div>
         ) : (
           <></>
         )}
-        {typeof children != typeof undefined && children.length > 0 ? (
+        {typeof children != typeof undefined ? (
           <div
             className="list"
             style={{

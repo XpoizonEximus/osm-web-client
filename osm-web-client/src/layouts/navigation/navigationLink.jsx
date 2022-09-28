@@ -1,20 +1,23 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./navigationLink.css";
 
 function NavigationLink({
-  link = "/",
+  href = "/",
   children = "Link",
   padding = "10px",
   highlight = false,
 }) {
   return (
-    <a
-      href={link}
+    <NavLink
+      to={href}
       style={{ paddingLeft: padding, paddingRight: padding }}
-      className={highlight?"navigation-link flex highlight":"navigation-link flex"}
+      className={
+        highlight ? "navigation-link flex highlight" : "navigation-link flex"
+      }
     >
       {children}
-    </a>
+    </NavLink>
   );
 }
 

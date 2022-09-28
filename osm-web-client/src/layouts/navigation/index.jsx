@@ -8,6 +8,8 @@ import Menu from "./menu/";
 import logo from "../../assets/photos/banner-edited.png";
 import menuLogo from "../../assets/photos/menu-logo.png";
 
+import { PATH } from "../../const/const";
+
 function Navigation(props) {
   const [isMenuVisible, setMenuVisibility] = useState(false);
 
@@ -32,13 +34,25 @@ function Navigation(props) {
           <img src={menuLogo} alt="logo" />
         </div>
         <div className="links-container flex row">
-          <NavigationLink padding="50px" highlight={true}>
+          <NavigationLink
+            padding="50px"
+            href={PATH.evenimente.index}
+            highlight={true}
+          >
             Evenimente
           </NavigationLink>
-          <NavigationLink padding="50px">Resurse</NavigationLink>
-          <NavigationLink padding="50px">Proiecte</NavigationLink>
-          <NavigationLink padding="50px">Shop</NavigationLink>
-          <NavigationLink padding="50px">Contact</NavigationLink>
+          <NavigationLink padding="50px" href={PATH.resurse.index}>
+            Resurse
+          </NavigationLink>
+          <NavigationLink padding="50px" href={PATH.proiecte.index}>
+            Proiecte
+          </NavigationLink>
+          <NavigationLink padding="50px" href={PATH.shop.index}>
+            Shop
+          </NavigationLink>
+          <NavigationLink padding="50px" href={PATH.contact.index}>
+            Contact
+          </NavigationLink>
         </div>
       </div>
     </div>
