@@ -1,0 +1,62 @@
+@import url("../../../const/const.css");
+
+#amfiteatre-sali #header .title {
+  padding: 0px;
+}
+
+#amfiteatre-sali #header .subtitle {
+  font-size: 1.5em;
+}
+
+#amfiteatre-sali #header .search-container {
+  padding: 20px 40px 10px 0px;
+}
+
+#faq .main {
+  background-color: var(--primary);
+  color: white;
+}
+
+#faq .main .content {
+  padding-top: 80px;
+}
+
+#faq hr {
+  --color: white;
+}
+
+#faq .content .grid-container {
+  font-size: 1.3em;
+
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 470px 670px;
+  align-items: start;
+
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+#faq .content a {
+  color: inherit;
+}
+
+#faq .question {
+  text-align: left;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+#faq .answer {
+  text-align: justify;
+}
+
+#faq .answer > img {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 0px 10px 0px;
+}
+
+#faq .answer p {
+  margin: 20px;
+}

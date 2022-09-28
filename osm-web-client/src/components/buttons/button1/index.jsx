@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./linkButton1.css";
+import "./button1.css";
 
-function LinkButton1({ children, type = "link", click = "" }) {
+function Button1({ children, type = "link", click = "" }) {
   return type === "link" ? (
     <Link to={click} className="link-button-1">
       {children}
@@ -16,4 +16,4 @@ function LinkButton1({ children, type = "link", click = "" }) {
   );
 }
 
-export default LinkButton1;
+export default Button1;

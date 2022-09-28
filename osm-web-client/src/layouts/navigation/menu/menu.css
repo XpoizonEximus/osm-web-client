@@ -60,13 +60,5 @@
 }
 
 #navigation .menu ul hr {
-  width: calc(100% - 2 * 40px);
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    var(--font-color),
-    transparent
-  );
+  --color: var(--font-color);
 }

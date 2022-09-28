@@ -1,6 +1,9 @@
 import React from "react";
 import "./searchBar.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 function SearchBar({ placeholder = "Search..." }) {
   return (
     <form role="search" className="search">
@@ -13,7 +16,9 @@ function SearchBar({ placeholder = "Search..." }) {
         autofocus
         required
       />
-      <button type="submit">Go</button>
+      <button type="submit">
+        <FontAwesomeIcon icon={faMagnifyingGlass} />
+      </button>
     </form>
   );
 }

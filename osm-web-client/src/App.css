@@ -60,6 +60,19 @@ h6 {
   padding: 0;
 }
 
+hr {
+  width: calc(100% - 2 * 40px);
+  border: 0;
+  height: 1px;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--color),
+    transparent
+  );
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -69,6 +82,7 @@ h6 {
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

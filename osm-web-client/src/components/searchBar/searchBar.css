@@ -53,6 +53,9 @@
 .search input:not(:placeholder-shown) + button {
   display: block;
 }
+.search button:hover {
+  cursor: pointer;
+}
 .search label {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);

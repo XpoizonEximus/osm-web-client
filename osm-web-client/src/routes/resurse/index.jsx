@@ -3,7 +3,7 @@ import "./resurse.css";
 
 import Header from "../../layouts/header";
 import banner from "../../assets/photos/resources-banner.png";
-import LinkButton1 from "../../components/buttons/linkButton1";
+import Button1 from "../../components/buttons/button1";
 import Card2 from "../../components/cards/card2";
 import * as Icons from "../../const/icons";
 
@@ -21,9 +21,9 @@ function ResursePage() {
         </p>
         <br />
         <br />
-        <LinkButton1 type="button" click={(e) => {resurseContent.current.scrollIntoView();console.log("here");}}>
+        <Button1 type="button" click={(e) => {resurseContent.current.scrollIntoView();console.log("here");}}>
           Vezi toate resursele »
-        </LinkButton1>
+        </Button1>
       </Header>
       <section id="content" className="main" ref={resurseContent}>
         <div className="content">
