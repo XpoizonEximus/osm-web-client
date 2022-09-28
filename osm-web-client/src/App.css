@@ -100,3 +100,8 @@ hr {
 .column {
   flex-direction: column;
 }
+
+.stretcher {
+  display: flex;
+  flex: 1;
+}

@@ -52,7 +52,10 @@ export const PATH = {
     },
     legaturiExterne: { index: "links/" },
     calculatorMedie: { index: "calculator-medie/" },
-    amfiteatreSali: { index: "amfiteatre-sali/" },
+    amfiteatreSali: {
+      index: "amfiteatre-sali/",
+      anatomie: { index: "anatomie/", maps: "https://goo.gl/maps/eHV4HqC2q1cu6ccUA", model3d: "/" },
+    },
     faq: { index: "faq/" },
   },
   echipa: { index: "echipa/" },

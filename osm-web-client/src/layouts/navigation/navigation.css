@@ -63,10 +63,3 @@
   height: 100%;
   flex: 1;
 }
-
-#navigation .auth-container {
-  flex: 0;
-  position: relative;
-  color: var(--font-color);
-  margin-left: 20px;
-}

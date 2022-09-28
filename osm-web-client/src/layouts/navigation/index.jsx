@@ -40,7 +40,6 @@ function Navigation(props) {
           <NavigationLink padding="50px">Shop</NavigationLink>
           <NavigationLink padding="50px">Contact</NavigationLink>
         </div>
-        <div className="auth-container flex row">Autentificare</div>
       </div>
     </div>
   );

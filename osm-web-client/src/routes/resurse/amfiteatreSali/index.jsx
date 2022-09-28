@@ -1,16 +1,24 @@
 import React from "react";
-import "./amfiteatreSali.css";
+import { Routes, Route } from "react-router-dom";
 
-import Header from "./header";
-import Card3 from "../../../components/cards/card3";
+import AmfiteatreSaliPage from "./amfiteatreSali";
+import NotFound404Page from "../../notFound404";
 
-function AmfiteatreSaliPage() {
-  return (
-    <div id="amfiteatre-sali">
-      <Header />
+import AnatomiePage from "./anatomie";
 
-    </div>
+import { PATH } from "../../../const/const";
+
+function AmfiteatreSaliRouter() {
+    return (
+    <Routes>
+      <Route path="/" element={<AmfiteatreSaliPage />} />
+      <Route path="*" element={<NotFound404Page />} />
+      <Route
+        path={PATH.resurse.amfiteatreSali.anatomie.index}
+        element={<AnatomiePage />}
+      />
+    </Routes>
   );
 }
 
-export default AmfiteatreSaliPage;
+export default AmfiteatreSaliRouter;

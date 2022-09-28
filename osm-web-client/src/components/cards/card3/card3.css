@@ -1,1 +1,67 @@
 @import url("../../../const/const.css");
+
+.card3 {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 40px 0px;
+  background-color: white;
+  color: var(--primary);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.card3:hover {
+  cursor: pointer;
+  transform: translate(0px, -10px);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card3 .img-container {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card3 .img-container img {
+  height: 100%;
+  overflow: hidden;
+}
+
+.card3 .container {
+  width: 60%;
+  height: 100%;
+  padding: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card3 .container p {
+  font-size: 1.3em;
+  color: black;
+}
+
+.card3 .buttons-container {
+  width: 100%;
+  justify-content: center;
+}
+
+.card3 .buttons-container a {
+  font-family: var(--font-family-title);
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary);
+
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 10px;
+
+  transition: all 0.5s;
+}
+
+.card3 .buttons-container a:hover {
+  background-color: var(--primary-hover);
+}

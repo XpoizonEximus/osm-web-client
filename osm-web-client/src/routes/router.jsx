@@ -16,7 +16,7 @@ import RegulamentePage from "./resurse/regulamente";
 import GhiduriPage from "./resurse/ghiduri";
 import LinksPage from "./resurse/links";
 import CalculatorMediePage from "./resurse/calculatorMedie";
-import AmfiteatreSaliPage from "./resurse/amfiteatreSali";
+import AmfiteatreSaliRouter from "./resurse/amfiteatreSali";
 import FaqPage from "./resurse/faq";
 
 import EchipaPage from "./echipa";
@@ -54,8 +54,8 @@ function Router() {
           element={<CalculatorMediePage />}
         />
         <Route
-          path={PATH.resurse.amfiteatreSali.index}
-          element={<AmfiteatreSaliPage />}
+          path={PATH.resurse.amfiteatreSali.index.concat("*")}
+          element={<AmfiteatreSaliRouter />}
         />
         <Route path={PATH.resurse.faq.index} element={<FaqPage />} />
         <Route path={PATH.echipa.index} element={<EchipaPage />} />
