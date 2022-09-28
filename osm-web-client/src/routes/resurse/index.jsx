@@ -21,7 +21,12 @@ function ResursePage() {
         </p>
         <br />
         <br />
-        <Button1 type="button" click={(e) => {resurseContent.current.scrollIntoView();console.log("here");}}>
+        <Button1
+          type="button"
+          click={(e) => {
+            resurseContent.current.scrollIntoView();
+          }}
+        >
           Vezi toate resursele »
         </Button1>
       </Header>
