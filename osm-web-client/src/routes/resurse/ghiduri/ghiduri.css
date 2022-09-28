@@ -1,18 +1,18 @@
 @import url("../../../const/const.css");
 
-.ghiduri #header .title {
+#ghiduri #header .title {
   padding: 0px;
 }
 
-.ghiduri #header .subtitle {
+#ghiduri #header .subtitle {
   font-size: 1.5em;
 }
 
-.ghiduri .main {
+#ghiduri .main {
   background-color: var(--primary);
 }
 
-.ghiduri .content {
+#ghiduri .content {
   max-width: 1200px;
 
   display: grid;

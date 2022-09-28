@@ -11,7 +11,7 @@ function RegulamentePage() {
   const regulamenteContent = useRef(null);
 
   return (
-    <div id="resurse">
+    <div id="regulamente">
       <Header img={banner} top={150}>
         <h1 className="title">Regulamente</h1>
         <p >Regulile pe care trebuie să le respectăm în viața de zi cu zi.</p>

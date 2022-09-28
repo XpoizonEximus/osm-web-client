@@ -2,7 +2,6 @@ import React from "react";
 import "./header.css";
 
 import banner from "../../assets/photos/copertafrontpage.jpg";
-import MouseScrollDown from "../../components/mouseScrollDown";
 
 function Header(props) {
   return (

@@ -66,9 +66,7 @@ function Projects() {
               de Arte într-o comunitate cultural-artistică al...
             </Card1>
           </div>
-          <a href="/">
-            Accesează toate proiectele »
-          </a>
+          <a href="/">Accesează toate proiectele »</a>
         </div>
       </div>
     </section>

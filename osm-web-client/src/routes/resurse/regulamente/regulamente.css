@@ -1,18 +1,18 @@
 @import url("../../../const/const.css");
 
-.regulamente #header .title {
+#regulamente #header .title {
   padding: 0px;
 }
 
-.regulamente #header .subtitle {
+#regulamente #header .subtitle {
   font-size: 1.5em;
 }
 
-.regulamente .main {
+#regulamente .main {
   background-color: var(--primary);
 }
 
-.regulamente .content {
+#regulamente .content {
   max-width: 1200px;
 
   display: grid;

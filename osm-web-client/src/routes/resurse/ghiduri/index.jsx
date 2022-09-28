@@ -11,7 +11,7 @@ function GhiduriPage() {
   const ghiduriContent = useRef(null);
 
   return (
-    <div id="resurse">
+    <div id="ghiduri">
       <Header img={banner} top={0}>
         <h1 className="title">Ghiduri</h1>
         <p className="subtitle">Explicații pas cu pas</p>
