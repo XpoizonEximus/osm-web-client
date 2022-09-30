@@ -1,16 +1,18 @@
 @import url("../../const/const.css");
 
 #navigation {
-  --bar-height: 60px;
-  --bar-color: var(--primary);
-  --font-color: white;
-
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 10;
 
   box-shadow: 0px 3px 5px 0px rgba(127, 127, 127, 0.5);
+}
+
+@media (max-width < 600px), (max-height < 800), (pointer: coarse) {
+  #navigation {
+    box-shadow: none;
+  }
 }
 
 #navigation > .container {
@@ -32,6 +34,8 @@
 }
 #navigation .logo-container,
 #navigation .menu-icon-container {
+  z-index: 20;
+
   --size: calc(2 * var(--bar-height) - 2 * var(--offset));
 
   height: var(--size);
@@ -62,4 +66,16 @@
 #navigation .links-container {
   height: 100%;
   flex: 1;
+}
+
+@media (max-width: 1300px) {
+  #navigation .links-container {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 1150px) {
+  #navigation .links-container {
+    display: none;
+  }
 }

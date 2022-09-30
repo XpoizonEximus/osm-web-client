@@ -18,6 +18,18 @@ body {
   background-repeat: repeat;
 }
 
+@media (max-width: 800px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+
 h1 {
   font-family: var(--font-family-title);
   font-size: 6em;

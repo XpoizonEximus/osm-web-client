@@ -5,7 +5,7 @@ import Header from "../../../layouts/header";
 import banner from "../../../assets/photos/rules-banner.png";
 import Button1 from "../../../components/buttons/button1";
 import Card2 from "../../../components/cards/card2";
-import {RegulamenteIcon} from "../../../const/icons";
+import { RegulamenteIcon } from "../../../const/icons";
 
 function RegulamentePage() {
   const regulamenteContent = useRef(null);
@@ -14,7 +14,7 @@ function RegulamentePage() {
     <div id="regulamente">
       <Header img={banner} top={150}>
         <h1 className="title">Regulamente</h1>
-        <p >Regulile pe care trebuie să le respectăm în viața de zi cu zi.</p>
+        <p>Regulile care se aplică oricărui student, în UMF cât și în OSM.</p>
         <br />
         <br />
         <Button1
@@ -28,9 +28,9 @@ function RegulamentePage() {
       </Header>
       <section id="content" className="main" ref={regulamenteContent}>
         <div className="content">
-          <Card2 title="Carta Universității" icon={RegulamenteIcon} />
           <Card2 title="OSM" icon={RegulamenteIcon} />
           <Card2 title="Deplasări externe" icon={RegulamenteIcon} />
+          <Card2 title="Carta Universității" icon={RegulamenteIcon} />
         </div>
       </section>
     </div>

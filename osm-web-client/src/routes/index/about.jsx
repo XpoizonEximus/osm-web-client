@@ -19,7 +19,7 @@ function About() {
           </div>
           <div className="container">
             <div className="img-container flex column">
-              <img src={bannerNew} alt="placeholder" height="400px" />
+              <img src={bannerNew} alt="placeholder"/>
             </div>
           </div>
           <div className="container span">

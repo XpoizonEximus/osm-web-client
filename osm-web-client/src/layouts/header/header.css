@@ -7,3 +7,11 @@
 #header .img-container img {
   width: 100%;
 }
+
+#header .header-card-alt {
+  text-align: center;
+  color: white;
+  background-color: var(--primary);
+
+  padding: 40px 15px 0px 15px;
+}

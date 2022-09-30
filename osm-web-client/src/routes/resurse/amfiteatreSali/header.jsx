@@ -3,8 +3,6 @@ import "./header.css";
 
 import { default as HeaderLayout } from "../../../layouts/header";
 
-import SearchBar from "../../../components/searchBar";
-
 import banner from "../../../assets/photos/aula.jpg";
 
 function Header() {
@@ -22,9 +20,6 @@ function Header() {
         Explicații detaliate cu poze și locații geografice. <br />
         Modele 3D ale celor mai importante.
       </p>
-      <div className="search-container">
-        <SearchBar placeholder="Caută amfiteatre și săli..." />
-      </div>
     </HeaderLayout>
   );
 }

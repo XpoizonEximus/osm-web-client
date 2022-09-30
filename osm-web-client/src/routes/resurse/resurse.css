@@ -23,3 +23,16 @@
   padding-bottom: 100px;
 }
 
+@media (max-width: 1200px) {
+  #resurse .content {
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  #resurse .content {
+    padding: 100px 20px;
+    grid-template-columns: 1fr;
+  }
+}

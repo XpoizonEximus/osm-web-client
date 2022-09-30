@@ -16,7 +16,7 @@ function Card3({
   let navigate = useNavigate();
 
   return (
-    <div to={href} className="card3 flex row" onClick={(e) => navigate(href)}>
+    <div to={href} className="card3 flex" onClick={(e) => navigate(href)}>
       <div className="img-container flex column">
         <img src={img} alt="alt" />
       </div>
@@ -27,8 +27,8 @@ function Card3({
         <div className="buttons-container flex row">
           {maps !== "" ? (
             <a href={maps}>
-              <FontAwesomeIcon icon={faMapLocationDot} />
-              {"\u00A0\u00A0\u00A0"}Maps
+              <FontAwesomeIcon icon={faMapLocationDot} />{" "}
+              <div style={{ padding: "2px" }}>Maps</div>
             </a>
           ) : (
             <></>
@@ -36,8 +36,8 @@ function Card3({
           <div className="stretcher row"></div>
           {model3d !== "" ? (
             <a href={model3d}>
-              <FontAwesomeIcon icon={faCube} />
-              {"\u00A0\u00A0\u00A0"}3D Model
+              <FontAwesomeIcon icon={faCube} />{" "}
+              <div style={{ padding: "2px" }}>3D Model</div>
             </a>
           ) : (
             <></>

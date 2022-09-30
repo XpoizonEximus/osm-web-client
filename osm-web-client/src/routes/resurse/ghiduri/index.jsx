@@ -29,7 +29,7 @@ function GhiduriPage() {
       </Header>
       <section id="content" className="main" ref={ghiduriContent}>
         <div className="content">
-          <Card2 title="Ghidul Bobocului" icon={GhiduriIcon} />
+          <Card2 title="Bobocul în OSM" icon={GhiduriIcon} />
           <Card2 title="Erasmus" icon={GhiduriIcon} />
           <Card2 title="Licență" icon={GhiduriIcon} />
         </div>

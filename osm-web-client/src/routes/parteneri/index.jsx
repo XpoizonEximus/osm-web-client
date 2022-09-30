@@ -8,6 +8,7 @@ function ParteneriPage() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        textAlign: "center",
       }}
     >
       În construcție

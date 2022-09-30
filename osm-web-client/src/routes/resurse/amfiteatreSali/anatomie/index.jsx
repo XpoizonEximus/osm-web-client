@@ -22,8 +22,11 @@ function AnatomiePage() {
   return (
     <div id="anatomie" className="amfiteatru">
       <header>
+        <div className="img-container">
+          <img src={banner} alt="anato-maps" />
+        </div>
         <div className="container">
-          <h2 className="title">Amfiteatrul Papilian-Albu - Anatomie Umană</h2>
+          <h3 className="title">Amfiteatrul Papilian-Albu - Anatomie Umană</h3>
           <div className="buttons-container">
             {maps !== "" ? (
               <a href={maps}>
@@ -44,13 +47,12 @@ function AnatomiePage() {
             )}
           </div>
         </div>
-        <div className="img-container">
-          <img src={banner} alt="anato-maps" />
-        </div>
       </header>
       <section className="main">
         <section className="content">
-          <h3 className="title">Cum ajung la Amfiteatrul Papilian-Albu - Anatomie Umană?</h3>
+          <h3 className="title">
+            Cum ajung la Amfiteatrul Papilian-Albu - Anatomie Umană?
+          </h3>
           <img src={poza1} alt="poza1" />
           <p>
             Intrați pe această stradă, dinspre Babeș, în incinta complexului

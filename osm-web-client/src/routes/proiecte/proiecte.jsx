@@ -33,7 +33,7 @@ function ProiectePage() {
           Vezi toate proiectele »
         </Button1>
       </Header>
-      <div className="main">
+      <div className="main" ref={proiecteContent}>
         <div className="content flex column">
           <div className="grid-container flex">
             <Card1 img={tpngLogo} title="Tutori pentru noua generație" href="/">

@@ -33,10 +33,15 @@
 }
 
 .card1 .title {
+  padding: 0px 10px;
   height: 2em;
   align-self: flex-start;
   color: white;
-  margin: 20px;
+  margin: 20px 0px;
+  width: 100%;
+
+  align-items: center;
+  text-align: center;
 }
 
 .card1 p {
@@ -52,6 +57,7 @@
 
 .card1 a {
   align-self: center;
+  text-align: center;
 
   font-family: var(--font-family-title);
   font-size: 1.3em;
@@ -59,7 +65,9 @@
   color: white;
   text-decoration: none;
 
-  padding: 10px 60px 10px 60px;
+  width: 80%;
+  padding: 10px;
+  margin: 0px 20px;
   background-color: transparent;
   border: 3px solid var(--secondary);
   border-radius: 20px;

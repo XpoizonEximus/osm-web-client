@@ -2,11 +2,14 @@
 
 .header-card {
   position: absolute;
+  z-index: 1;
   padding: 40px;
   background-color: var(--primary);
   color: white;
   border-radius: 20px;
   max-width: 60vw;
-  left: 200px;
+  margin: 0px 200px;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
 }
+
+

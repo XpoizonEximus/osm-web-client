@@ -17,9 +17,23 @@
 
   display: grid;
   gap: 30px;
-  grid-template-columns: 380px 380px 380px;
+  grid-template-columns: 1fr 1fr 1fr;
 
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  #ghiduri .content {
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  #ghiduri .content {
+    padding: 100px 20px;
+    grid-template-columns: 1fr;
+  }
 }
 

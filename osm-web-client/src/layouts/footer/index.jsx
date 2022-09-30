@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer id="footer">
       <div className="main">
-        <div className="content flex row">
+        <div className="content flex">
           <div className="left flex column">
             <a href="./" className="logo-container flex column">
               <img src={logo} alt="logo" />
@@ -65,10 +65,15 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="copyright">
-              © Copyright 1990 - 2022 |{" "}
-              <i>Organizaţia Studenţilor Medicinişti - OSM Cluj</i> | Toate
-              drepturile rezervate
+            <div className="copyright flex column">
+              <div>
+                © Copyright 1990 - 2022 |{" "}
+                <i>Organizaţia Studenţilor Medicinişti din Cluj</i> | Toate
+                drepturile rezervate
+              </div>
+              <div>
+                Dezvoltator: <i>Serenus Dragoș</i> și <i>Radu-Andrei Vaida</i>
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,10 @@
 import React from "react";
 import "./projects.css";
 
+import { PATH } from "../../const/const";
+
 import Card1 from "../../components/cards/card1";
+import Button1 from "../../components/buttons/button1";
 
 import tpngLogo from "../../assets/photos/tpng-logo.jpeg";
 import medisticLogo from "../../assets/photos/medistic-logo.png";
@@ -66,7 +69,9 @@ function Projects() {
               de Arte într-o comunitate cultural-artistică al...
             </Card1>
           </div>
-          <a href="/">Accesează toate proiectele »</a>
+          <Button1 type="link" click={PATH.proiecte.index}>
+            Accesează toate proiectele »
+          </Button1>
         </div>
       </div>
     </section>

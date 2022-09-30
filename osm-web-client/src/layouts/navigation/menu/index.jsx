@@ -9,7 +9,7 @@ import { PATH, LINKS } from "../../../const/const";
 function Menu({ isVisible, setVisibility }) {
   return (
     <div
-      className={isVisible ? "menu expanded" : "menu colapsed"}
+      className={isVisible ? "nav-menu expanded" : "nav-menu colapsed"}
       onMouseEnter={(e) => {
         setVisibility(true);
       }}
@@ -17,7 +17,7 @@ function Menu({ isVisible, setVisibility }) {
         setVisibility(false);
       }}
     >
-      <ul className="menu-dropdown flex column list-container">
+      <ul className="nav-menu-dropdown list-container flex column ">
         <MenuLink
           title="Evenimente"
           icon={Icons.EvenimenteIcon}

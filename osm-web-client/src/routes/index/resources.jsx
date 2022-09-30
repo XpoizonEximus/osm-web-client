@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import "./resources.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,10 +9,12 @@ import {
   faBuildingColumns,
   faScroll,
   faGraduationCap,
-  faUserDoctor
+  faUserDoctor,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Card2 from "../../components/cards/card2";
+import Button1 from "../../components/buttons/button1";
+import {PATH} from "../../const/const"
 
 function Resources() {
   return (
@@ -47,9 +49,9 @@ function Resources() {
               icon={<FontAwesomeIcon icon={faUserDoctor} />}
             />
           </div>
-          <Link to="/" className="see-more">
-                Accesează toate resursele »
-          </Link>
+          <Button1 type="link" click={PATH.resurse.index}>
+            Accesează toate resursele »
+          </Button1>
         </div>
       </div>
     </section>

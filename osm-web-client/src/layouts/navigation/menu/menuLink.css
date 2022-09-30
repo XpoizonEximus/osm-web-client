@@ -1,17 +1,24 @@
 @import url(../../../const/const.css);
 
-#navigation .menu ul li {
+.nav-menu ul li {
   width: 100%;
 }
 
-#navigation .menu ul li a {
+.nav-menu ul li a {
   width: 100%;
   font-family: var(--font-family-title);
   text-decoration: none;
   padding: 5px 20px 5px 20px;
 }
 
-#navigation .menu ul li a:hover {
+@media (pointer: coarse) {
+  .nav-menu ul li a {
+    font-size: 1.4em;
+    padding: 25px;
+  }
+}
+
+.nav-menu ul li a:hover {
   background-image: linear-gradient(
     to right,
     transparent,
@@ -19,13 +26,13 @@
   );
 }
 
-#navigation .menu ul li a .title {
+.nav-menu ul li a .title {
   color: var(--font-color);
   flex: 1;
   display: flex;
   flex-direction: row;
 }
-#navigation .menu ul li a .icon-container {
+.nav-menu ul li a .icon-container {
   width: 30px;
   height: 100%;
   display: flex;
@@ -33,21 +40,27 @@
   justify-content: flex-start;
 }
 
-#navigation .menu ul li a .guillets {
+.nav-menu ul li a .guillets {
   color: var(--font-color);
 }
 
-#navigation .menu a .list {
+.nav-menu a .list {
   position: absolute;
   left: calc(100% - 10px);
 }
 
-#navigation .menu a:hover > .list > .list-container {
+.nav-menu a:hover > .list > .list-container {
   display: block;
   border-radius: 10px;
   background-color: var(--bar-color);
 }
 
-#navigation .menu a > .list > .list-container {
+@media (max-width < 600px), (max-height < 800), (pointer: coarse) {
+  .nav-menu a:hover > .list > .list-container {
+    display: none;
+  }
+}
+
+.nav-menu a > .list > .list-container {
   display: none;
 }

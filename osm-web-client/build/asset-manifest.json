@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3906cdb.css",
-    "main.js": "/static/js/main.bffdcd53.js",
+    "main.css": "/static/css/main.d56ccfab.css",
+    "main.js": "/static/js/main.a41e98a2.js",
     "static/js/787.4546fbdd.chunk.js": "/static/js/787.4546fbdd.chunk.js",
     "static/media/resources-banner.png": "/static/media/resources-banner.dfb21ff9d603d585b7ab.png",
     "static/media/rules-banner.png": "/static/media/rules-banner.5724a6aad78077d9058f.png",
@@ -10,6 +10,7 @@
     "static/media/anato.png": "/static/media/anato.4752d3f26111161a1170.png",
     "static/media/registratura-maps3d.png": "/static/media/registratura-maps3d.81fb04c073ded023f661.png",
     "static/media/secretariat-maps3d.png": "/static/media/secretariat-maps3d.ca6e42fdbf030fd134d5.png",
+    "static/media/proiecte-banner.jpg": "/static/media/proiecte-banner.6c5bb878ca865f286fe5.jpg",
     "static/media/poza2.jpg": "/static/media/poza2.a9616bcdd1e561264d55.jpg",
     "static/media/poza7.jpg": "/static/media/poza7.9d9f64bf25757d77e63f.jpg",
     "static/media/poza1.jpg": "/static/media/poza1.ea1c1ab8c5df110c90b0.jpg",
@@ -21,7 +22,6 @@
     "static/media/poza4.jpg": "/static/media/poza4.75c38ae65c65159e21a3.jpg",
     "static/media/poza5.jpg": "/static/media/poza5.75abb7429878ad8db684.jpg",
     "static/media/teddy-logo.jpg": "/static/media/teddy-logo.bbffa750581ffc42df92.jpg",
-    "static/media/proiecte-banner.jpg": "/static/media/proiecte-banner.a604a749acb1d010a158.jpg",
     "static/media/dmp-logo.png": "/static/media/dmp-logo.00a79c910a83533aca76.png",
     "static/media/tpng-logo.jpeg": "/static/media/tpng-logo.1321d447f722412d7d73.jpeg",
     "static/media/banner-edited.png": "/static/media/banner-edited.26a7f286d4cfe16227fd.png",
@@ -30,12 +30,12 @@
     "static/media/medistic-logo.png": "/static/media/medistic-logo.374648813990f9d1db5f.png",
     "static/media/banner-new.png": "/static/media/banner-new.643b99573dc8c5133aaa.png",
     "index.html": "/index.html",
-    "main.a3906cdb.css.map": "/static/css/main.a3906cdb.css.map",
-    "main.bffdcd53.js.map": "/static/js/main.bffdcd53.js.map",
+    "main.d56ccfab.css.map": "/static/css/main.d56ccfab.css.map",
+    "main.a41e98a2.js.map": "/static/js/main.a41e98a2.js.map",
     "787.4546fbdd.chunk.js.map": "/static/js/787.4546fbdd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3906cdb.css",
-    "static/js/main.bffdcd53.js"
+    "static/css/main.d56ccfab.css",
+    "static/js/main.a41e98a2.js"
   ]
 }

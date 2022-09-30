@@ -2,6 +2,7 @@
 
 .card3 {
   width: 100%;
+  flex-direction: row;
   height: 300px;
   overflow: hidden;
   border-radius: 20px;
@@ -54,14 +55,44 @@
   text-decoration: none;
   color: white;
   background-color: var(--primary);
+  white-space: nowrap;
 
   padding: 10px 20px;
   margin: 20px;
   border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   transition: all 0.5s;
 }
 
 .card3 .buttons-container a:hover {
   background-color: var(--primary-hover);
+}
+
+@media (max-width: 500px) {
+  .card3 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card3 .img-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .card3 .img-container img {
+    width: 100%;
+  }
+
+  .card3 .container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .card3 .buttons-container a {
+    flex-direction: column;
+  }
 }

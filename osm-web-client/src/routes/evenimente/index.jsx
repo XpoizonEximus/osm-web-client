@@ -6,6 +6,7 @@ function EvenimentePage() {
     height: "100vh",
     display: "flex",
     alignItems: "center",
+    textAlign: "center",
     justifyContent: "center",
   }}
 >
