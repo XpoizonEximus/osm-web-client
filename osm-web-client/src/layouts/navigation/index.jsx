@@ -27,6 +27,15 @@ function Navigation(props) {
               <img src={logo} alt="logo" />
             </div>
           </Link>
+          <div className="links-container small flex row">
+          <NavigationLink
+              padding="50px"
+              href={PATH.evenimente.index}
+              highlight={true}
+            >
+              Evenimente
+            </NavigationLink>
+          </div>
           <div
             className="menu-icon-container flex"
             onMouseEnter={(e) => {
@@ -36,7 +45,10 @@ function Navigation(props) {
               setMenuVisibility(false);
             }}
             onClick={(e) => {
-              if (fullscreenMenu) setMenuVisibility(!isMenuVisible);
+              if (fullscreenMenu) {
+                setMenuVisibility(!isMenuVisible);
+                window.scrollTo(0, 0);
+              }
             }}
           >
             <img src={menuLogo} alt="logo" />

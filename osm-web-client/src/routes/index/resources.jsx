@@ -14,7 +14,7 @@ import {
 
 import Card2 from "../../components/cards/card2";
 import Button1 from "../../components/buttons/button1";
-import {PATH} from "../../const/const"
+import { PATH } from "../../const/const";
 
 function Resources() {
   return (
@@ -27,26 +27,32 @@ function Resources() {
             <Card2
               title="FAQ"
               icon={<FontAwesomeIcon icon={faCircleQuestion} />}
+              href={PATH.resurse.faq.index}
             />
             <Card2
               title="Calculator medie"
               icon={<FontAwesomeIcon icon={faCalculator} />}
+              href={PATH.resurse.calculatorMedie.index}
             />
             <Card2
               title="Amfiteatre"
               icon={<FontAwesomeIcon icon={faBuildingColumns} />}
+              href={PATH.resurse.amfiteatreSali.index}
             />
             <Card2
               title="Ghid ERASMUS"
               icon={<FontAwesomeIcon icon={faScroll} />}
+              href={PATH.resurse.ghiduri.index}
             />
             <Card2
               title="Ghid licență"
               icon={<FontAwesomeIcon icon={faGraduationCap} />}
+              href={PATH.resurse.ghiduri.index}
             />
             <Card2
               title="Ghidul bobocului"
               icon={<FontAwesomeIcon icon={faUserDoctor} />}
+              href={PATH.resurse.ghiduri.index}
             />
           </div>
           <Button1 type="link" click={PATH.resurse.index}>

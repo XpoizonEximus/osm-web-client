@@ -8,6 +8,7 @@ import Card2 from "../../../components/cards/card2";
 import { RegulamenteIcon } from "../../../const/icons";
 
 function RegulamentePage() {
+  window.scrollTo(0, 0);
   const regulamenteContent = useRef(null);
 
   return (

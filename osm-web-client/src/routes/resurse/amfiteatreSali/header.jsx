@@ -6,6 +6,7 @@ import { default as HeaderLayout } from "../../../layouts/header";
 import banner from "../../../assets/photos/aula.jpg";
 
 function Header() {
+  window.scrollTo(0, 0);
   return (
     <HeaderLayout img={banner} top={100}>
       <h2 className="title">

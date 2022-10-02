@@ -4,10 +4,12 @@ import "./links.css";
 import Header from "../../../layouts/header";
 import banner from "../../../assets/photos/links-banner.jpg";
 import Button1 from "../../../components/buttons/button1";
-import Card2 from "../../../components/cards/card2";
-import {LinksIcon} from "../../../const/icons";
+import { Card2Redirect } from "../../../components/cards/card2";
+import { LinksIcon } from "../../../const/icons";
+import { LINKS } from "../../../const/const";
 
 function LinksPage() {
+  window.scrollTo(0, 0);
   const LinksContent = useRef(null);
 
   return (
@@ -27,8 +29,12 @@ function LinksPage() {
       </Header>
       <section id="content" className="main" ref={LinksContent}>
         <div className="content">
-          <Card2 title="Site UMF" icon={LinksIcon} />
-          <Card2 title="Site Info-Stud" icon={LinksIcon} />
+          <Card2Redirect title="Site UMF" icon={LinksIcon} href={LINKS.umf} />
+          <Card2Redirect
+            title="Site Info-Stud"
+            icon={LinksIcon}
+            href={LINKS.emsys}
+          />
         </div>
       </section>
     </div>

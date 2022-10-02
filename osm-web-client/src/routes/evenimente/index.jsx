@@ -1,6 +1,7 @@
 import React from "react";
 
 function EvenimentePage() {
+  window.scrollTo(0, 0);
   return <h1
   style={{
     height: "100vh",

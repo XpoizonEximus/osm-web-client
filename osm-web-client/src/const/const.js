@@ -54,7 +54,146 @@ export const PATH = {
     calculatorMedie: { index: "calculator-medie/" },
     amfiteatreSali: {
       index: "amfiteatre-sali/",
-      anatomie: { index: "anatomie/", maps: "https://goo.gl/maps/eHV4HqC2q1cu6ccUA", model3d: "/" },
+      aleman: {
+        index: "aleman/",
+        maps: "https://goo.gl/maps/Y83tYfYBAGFtM4Jz5",
+        model3d: "",
+      },
+      anatomie: {
+        index: "anatomie/",
+        maps: "https://goo.gl/maps/eHV4HqC2q1cu6ccUA",
+        model3d: "",
+      },
+      anatomiePatologica: {
+        index: "anatomie-patologica/",
+        maps: "https://goo.gl/maps/eHV4HqC2q1cu6ccUA",
+        model3d: "",
+      },
+      bilascu: {
+        index: "bilascu/",
+        maps: "https://goo.gl/maps/ACb2dVRYnUrVYs3P8",
+        model3d: "",
+      },
+      opris: {
+        index: "opris/",
+        maps: "https://goo.gl/maps/Y83tYfYBAGFtM4Jz5",
+        model3d: "",
+      },
+      cucuianuMantaPreda: {
+        index: "cucuianu-manta-preda/",
+        maps: "https://goo.gl/maps/a6MwbdAxxsqfmX599",
+        model3d: "",
+      },
+      dermatologie: {
+        index: "dermatologie/",
+        maps: "https://goo.gl/maps/ygscj9HTapJ3TkNS9",
+        model3d: "",
+      },
+      dorofteiu: {
+        index: "dorofteiu/",
+        maps: "https://goo.gl/maps/yqtBmKpGGbrk4Dnt7",
+        model3d: "",
+      },
+      fiziologie: {
+        index: "fiziologie/",
+        maps: "https://goo.gl/maps/ctkiWT7VSDDCyHY79",
+        model3d: "",
+      },
+      chirurgie1: {
+        index: "chirurgie-1/",
+        maps: "https://goo.gl/maps/Qf5GZBFGAkRnWheL9",
+        model3d: "",
+      },
+      infectioase: {
+        index: "infectioase/",
+        maps: "https://goo.gl/maps/pEpEuqVRisVEiw8r6",
+        model3d: "",
+      },
+      medicala1: {
+        index: "medicala-1/",
+        maps: "https://goo.gl/maps/xj7bnZgf9EUeDN2L9",
+        model3d: "",
+      },
+      minea: {
+        index: "minea/",
+        maps: "https://goo.gl/maps/McMAHQkwpiqxKiV4A",
+        model3d: "",
+      },
+      popper: {
+        index: "popper/",
+        maps: "https://goo.gl/maps/GYJDgrP95RcXMfgdA",
+        model3d: "",
+      },
+      radiologie: {
+        index: "radiologie/",
+        maps: "https://goo.gl/maps/741Wj4PVDjuYJxYx8",
+        model3d: "",
+      },
+      recuperare: {
+        index: "recuperare/",
+        maps: "https://goo.gl/maps/zuhUyZAxngBnRsrV7",
+        model3d: "",
+      },
+      simiti: {
+        index: "simiti/",
+        maps: "https://goo.gl/maps/B4bEobbZJbnoRdYK7",
+        model3d: "",
+      },
+      cabinetBabes: {
+        index: "cabinet-babes/",
+        maps: "https://goo.gl/maps/mpN4r9DPtzej88iy6",
+        model3d: "",
+      },
+      cabinetHasdeu: {
+        index: "cabinet-hasdeu/",
+        maps: "https://goo.gl/maps/4dKjV4nfaNjbu2EVA",
+        model3d: "",
+      },
+      casierie: {
+        index: "casierie/",
+        maps: "https://goo.gl/maps/D8hoosHknTnUFcC68",
+        model3d: "",
+      },
+      labBiofizica: {
+        index: "laborator-biofizica/",
+        maps: "https://goo.gl/maps/42ZMsQ9Ke7eX9wtYA",
+        model3d: "",
+      },
+      labBiocel: {
+        index: "laborator-biologie-celulara/",
+        maps: "https://goo.gl/maps/epEFgWUfzGq8PKhx8",
+        model3d: "",
+      },
+      labBiostat: {
+        index: "laborator-biostatistica/",
+        maps: "https://goo.gl/maps/V8RQ2ahWVwwxDKD18",
+        model3d: "",
+      },
+      registratura: {
+        index: "registratura/",
+        maps: "https://goo.gl/maps/D8hoosHknTnUFcC68",
+        model3d: "",
+      },
+      multimedia: {
+        index: "multimedia/",
+        maps: "https://goo.gl/maps/CghiRY74VPXdzEst8",
+        model3d: "",
+      },
+      genetica: {
+        index: "genetica/",
+        maps: "https://goo.gl/maps/42ZMsQ9Ke7eX9wtYA",
+        model3d: "",
+      },
+      medicala2: {
+        index: "medicala2/",
+        maps: "https://goo.gl/maps/KdM13nc45VmfEnYcA",
+        model3d: "",
+      },
+      moldovan: {
+        index: "moldovan/",
+        maps: "https://goo.gl/maps/3hpTGbcH1BAC4AEC7",
+        model3d: "",
+      },
     },
     faq: { index: "faq/" },
   },

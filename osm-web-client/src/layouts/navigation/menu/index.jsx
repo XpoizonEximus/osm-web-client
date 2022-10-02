@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./menu.css";
 
 import MenuLink from "./menuLink";
@@ -7,6 +8,11 @@ import * as Icons from "../../../const/icons";
 import { PATH, LINKS } from "../../../const/const";
 
 function Menu({ isVisible, setVisibility }) {
+  const location = useLocation();
+  useEffect(() => {
+    setVisibility(false);
+  }, [location]);
+
   return (
     <div
       className={isVisible ? "nav-menu expanded" : "nav-menu colapsed"}
@@ -29,7 +35,7 @@ function Menu({ isVisible, setVisibility }) {
           href={PATH.proiecte.index}
           top={77}
         >
-          <MenuLink title="Tutori pentru noua generație" />
+          {/* <MenuLink title="Tutori pentru noua generație" />
           <MenuLink title="MEDSTIC - Trupa de teatru a facultăţii" />
           <MenuLink title="Teddy Bear Hospital" />
           <MenuLink title="Disaster Medicine Preparedness" />
@@ -53,7 +59,7 @@ function Menu({ isVisible, setVisibility }) {
           <MenuLink title="Medicalis" />
           <MenuLink title="Focul viu" />
           <MenuLink title="Transmed" />
-          <MenuLink title="Împreună pentru sănătate" />
+          <MenuLink title="Împreună pentru sănătate" /> */}
         </MenuLink>
         <MenuLink title="Shop" icon={Icons.ShopIcon} href={PATH.shop.index} />
         <hr />

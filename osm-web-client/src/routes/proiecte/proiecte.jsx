@@ -14,6 +14,7 @@ import zemLogo from "../../assets/photos/zem-logo.jpg";
 import aaLogo from "../../assets/photos/artistic-anatomy-logo.png";
 
 function ProiectePage() {
+  window.scrollTo(0, 0);
   const proiecteContent = useRef(null);
   return (
     <div id="proiecte">
