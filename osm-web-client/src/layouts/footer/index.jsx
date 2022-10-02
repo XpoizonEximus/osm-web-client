@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 import Media from "./media";
 
 import logo from "../../assets/photos/banner-new.png";
+
+import { PATH } from "../../const/const";
 
 function Footer() {
   return (
@@ -23,44 +26,44 @@ function Footer() {
               <div className="menu-section flex column">
                 <ul className="flex">
                   <li>
-                    <a href="/">Proiecte</a>
+                    <Link to={PATH.parteneri.index}>Parteneri și sponsori</Link>
                   </li>
                   <li>
-                    <a href="/">Evenimente</a>
+                    <Link to={PATH.echipa.index}>Consiliu director</Link>
                   </li>
                   <li>
-                    <a href="/">Consiliu director</a>
+                    <Link to={PATH.echipa.index}>Reprezentanți de an</Link>
                   </li>
                   <li>
-                    <a href="/">Reprezentanți de an</a>
+                    <Link to={PATH.echipa.index}>Coordonatori proiecte</Link>
                   </li>
                   <li>
-                    <a href="/">Parteneri și sponsori</a>
-                  </li>
-                  <li>
-                    <a href="/">Magazin online</a>
+                    <Link to={"/"}>Politica de confidențialitate</Link>
                   </li>
                 </ul>
               </div>
-              <div className="menu-section flex column">
+              <div className="menu-section flex column right">
                 <ul className="flex">
                   <li>
-                    <a href="/">Calculatoare medii</a>
+                    <Link to={PATH.resurse.faq.index}>Întrebări frecvente</Link>
                   </li>
                   <li>
-                    <a href="/">Site Umf</a>
+                    <Link to={PATH.resurse.calculatorMedie.index}>
+                      Calculator medie
+                    </Link>
                   </li>
                   <li>
-                    <a href="/">Site Infostud</a>
+                    <Link to={PATH.resurse.amfiteatreSali.index}>
+                      Amfiteatre și săli
+                    </Link>
                   </li>
                   <li>
-                    <a href="/">Regulamente și ghiduri</a>
+                    <Link to={PATH.resurse.ghiduri.index}>Ghiduri</Link>
                   </li>
                   <li>
-                    <a href="/">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="/">Contact</a>
+                    <Link to={PATH.resurse.legaturiExterne.index}>
+                      Legături externe
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -71,6 +74,7 @@ function Footer() {
                 <i>Organizaţia Studenţilor Medicinişti din Cluj</i> | Toate
                 drepturile rezervate
               </div>
+              <hr />
               <div>
                 Dezvoltator: <i>Serenus Dragoș</i> și <i>Radu-Andrei Vaida</i>
               </div>

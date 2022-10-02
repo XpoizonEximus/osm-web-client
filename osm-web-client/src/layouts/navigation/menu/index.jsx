@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./menu.css";
 
-import MenuLink from "./menuLink";
+import MenuLink, { MenuLinkRedirect } from "./menuLink";
 import * as Icons from "../../../const/icons";
 
 import { PATH, LINKS } from "../../../const/const";
 
 function Menu({ isVisible, setVisibility }) {
-  const location = useLocation();
+  const [location, setLocation] = useState(useLocation());
   useEffect(() => {
     setVisibility(false);
   }, [location]);
@@ -98,14 +98,22 @@ function Menu({ isVisible, setVisibility }) {
           icon={Icons.AmfiteatreSaliIcon}
           href={PATH.resurse.amfiteatreSali.index}
         />
-        <MenuLink title="Site Emsys Info-stud" icon={Icons.LinksIcon} />
+        <MenuLinkRedirect
+          title="Catalog Emsys"
+          icon={Icons.LinksIcon}
+          href={LINKS.emsys}
+        />
         <MenuLink
           title="Legături externe"
           icon={Icons.LinksIcon}
           href={PATH.resurse.legaturiExterne.index}
           top={320}
         >
-          <MenuLink title="Site UMF" icon={Icons.LinksIcon} />
+          <MenuLinkRedirect
+            title="Site UMF"
+            icon={Icons.LinksIcon}
+            href={LINKS.umf}
+          />
         </MenuLink>
         <hr />
         <MenuLink

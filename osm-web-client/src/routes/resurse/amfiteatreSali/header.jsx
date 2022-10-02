@@ -21,6 +21,9 @@ function Header() {
         Explicații detaliate cu poze și locații geografice. <br />
         Modele 3D ale celor mai importante.
       </p>
+      <p>
+        Ctrl + F pentru a căuta amfiteatre si sali
+      </p>
     </HeaderLayout>
   );
 }

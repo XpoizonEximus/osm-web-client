@@ -16,11 +16,7 @@ function Card3({
   let navigate = useNavigate();
 
   return (
-    <div
-      to={href}
-      className="card3 flex"
-      onClick={(e) => navigate(href)}
-    >
+    <div to={href} className="card3 flex" onClick={(e) => navigate(href)}>
       <div className="img-container flex column">
         <img src={img} alt="alt" />
       </div>
@@ -37,7 +33,7 @@ function Card3({
           ) : (
             <></>
           )}
-          <div className="stretcher row"></div>
+          {model3d !== "" && maps !== "" ? <div className="stretcher row"></div> : <></>}
           {model3d !== "" ? (
             <a href={model3d}>
               <FontAwesomeIcon icon={faCube} />{" "}

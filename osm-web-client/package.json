@@ -1,6 +1,6 @@
 {
   "name": "osm-web-client",
-  "homepage": "http://frontend.osmcluj.ro/",
+  "homepage": "http:/osmcluj.ro/",
   "version": "0.1.0",
   "private": true,
   "peerDependencies": {

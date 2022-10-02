@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./ghiduri.css";
 
 import Header from "../../../layouts/header";
@@ -13,13 +13,12 @@ function GhiduriPage() {
   window.scrollTo(0, 0);
   const ghiduriContent = useRef(null);
 
-  const [erasmus, setErasmus] = React.useState();
+  const [setErasmus] = React.useState();
   fetch(ghidErasmus)
     .then((response) => response.text())
     .then((textContent) => {
       setErasmus(textContent);
     });
-
   return (
     <div id="ghiduri">
       <Header img={banner} top={0}>

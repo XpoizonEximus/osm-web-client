@@ -20,7 +20,7 @@ function FaqPage() {
         </p>
         <br />
         <div className="search-container">
-          <SearchBar placeholder="Caută întrebări și răspunsuri..." />
+          <SearchBar placeholder="Ctrl + F pentru a căuta..." />
         </div>
         <br />
       </Header>
@@ -31,9 +31,9 @@ function FaqPage() {
             <div className="grid-container">
               <div className="question">Unde găsesc carta UMF și ce este?</div>
               <div className="answer">
-                Carta UMFCarta UMF reprezintă „Constituția” UMF și conține
-                principalele reguli și modul de organizare și funcționare a
-                Universității. Carta în versiune actualizată este{" "}
+                Carta UMF reprezintă „Constituția” UMF și conține principalele
+                reguli și modul de organizare și funcționare a Universității.
+                Carta în versiune actualizată este{" "}
                 <a href="http://www.umfcluj.ro/images/fisiere/regulamente/2021/CARTA%20-%20flipbook.pdf ">
                   aici
                 </a>
@@ -48,6 +48,7 @@ function FaqPage() {
                 <a href="http://www.umfcluj.ro/facmed-ro/decanat-mg-ro/secretariat-mg-ro">
                   aici
                 </a>
+                .
               </div>
               <div className="question">
                 Care este programul la registratură și unde este?

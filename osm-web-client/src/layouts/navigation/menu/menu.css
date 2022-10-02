@@ -41,6 +41,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .nav-menu .nav-menu-dropdown {
+    padding: 10px 0px 10px 0px;
+  }
+}
+
 .nav-menu.colapsed .nav-menu-dropdown {
   display: none;
   animation: menu-dropup-animation 300ms ease-in-out forwards;

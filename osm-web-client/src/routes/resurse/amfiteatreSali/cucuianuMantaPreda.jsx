@@ -39,7 +39,11 @@ function CucuianuMantaPredaPage() {
             ) : (
               <></>
             )}
-            <div className="stretcher row"></div>
+            {model3d !== "" && maps !== "" ? (
+              <div className="stretcher row"></div>
+            ) : (
+              <></>
+            )}
             {model3d !== "" ? (
               <a href={model3d}>
                 <FontAwesomeIcon icon={faCube} />

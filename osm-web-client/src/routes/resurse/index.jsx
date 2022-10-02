@@ -61,7 +61,7 @@ function ResursePage() {
             href={"/".concat(PATH.resurse.amfiteatreSali.index)}
           />
           <Card2Redirect
-            title="Emsys Info-stud"
+            title="Catalog Emsys"
             icon={Icons.LinksIcon}
             href={LINKS.emsys}
           />

@@ -33,7 +33,11 @@ function CasieriePage() {
             ) : (
               <></>
             )}
-            <div className="stretcher row"></div>
+            {model3d !== "" && maps !== "" ? (
+              <div className="stretcher row"></div>
+            ) : (
+              <></>
+            )}
             {model3d !== "" ? (
               <a href={model3d}>
                 <FontAwesomeIcon icon={faCube} />
@@ -47,9 +51,7 @@ function CasieriePage() {
       </header>
       <section className="main">
         <section className="content">
-          <h3 className="title">
-            Cum ajung la casierie și la biroul de taxe?
-          </h3>
+          <h3 className="title">Cum ajung la casierie și la biroul de taxe?</h3>
           <img src={poza1} alt="poza1" />
           <p>
             Intrați prin intrarea de pe Louis Pasteur 6, unde e bariera și
