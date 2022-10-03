@@ -1,7 +1,7 @@
 {
   "name": "osm-web-client",
   "homepage": "http:/osmcluj.ro/",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "peerDependencies": {
     "react": "^18.2.0",

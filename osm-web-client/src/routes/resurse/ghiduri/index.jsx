@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./ghiduri.css";
 
 import Header from "../../../layouts/header";
-import banner from "../../../assets/photos/guides-banner.png";
+import banner from "../../../assets/photos/guides-banner.jpg";
 import Button1 from "../../../components/buttons/button1";
 import Card2 from "../../../components/cards/card2";
 import { GhiduriIcon } from "../../../const/icons";

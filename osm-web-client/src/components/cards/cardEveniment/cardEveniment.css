@@ -1,0 +1,55 @@
+@import url("../../../const/const.css");
+
+.cardEveniment {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  color: var(--dark);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  text-decoration: none;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.cardEveniment:hover {
+  cursor: pointer;
+  transform: translate(0px, -10px);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.cardEveniment img {
+  width: 40%;
+  overflow: hidden;
+}
+
+.cardEveniment .container {
+  width: 60%;
+}
+
+.cardEveniment .title {
+  padding: 20px;
+}
+
+.cardEveniment .description {
+  font-size: 1.2em;
+  width: 85%;
+  text-align: justify;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .cardEveniment {
+    flex-direction: column;
+  }
+
+  .cardEveniment img {
+    width: 100%;
+  }
+  
+  .cardEveniment .container {
+    width: 100%;
+  }
+}
