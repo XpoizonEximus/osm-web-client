@@ -1,14 +1,14 @@
 @import url("../../../const/const.css");
 
-#amfiteatre-sali #header .title {
+#faq #header .title {
   padding: 0px;
 }
 
-#amfiteatre-sali #header .subtitle {
+#faq #header .subtitle {
   font-size: 1.5em;
 }
 
-#amfiteatre-sali #header .search-container {
+#faq #header .search-container {
   padding: 20px 40px 10px 0px;
 }
 

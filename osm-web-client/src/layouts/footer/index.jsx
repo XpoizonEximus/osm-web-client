@@ -76,7 +76,7 @@ function Footer() {
               </div>
               <hr />
               <div>
-                Dezvoltator: <i>Serenus Dragoș</i> și <i>Radu-Andrei Vaida</i>
+                Dezvoltatori: <i>Serenus Dragoș</i> și <i>Radu Vaida</i>
               </div>
             </div>
           </div>

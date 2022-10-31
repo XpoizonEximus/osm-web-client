@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./menu.css";
 
@@ -8,10 +8,10 @@ import * as Icons from "../../../const/icons";
 import { PATH, LINKS } from "../../../const/const";
 
 function Menu({ isVisible, setVisibility }) {
-  const [location, setLocation] = useState(useLocation());
+  const location = useLocation();
   useEffect(() => {
     setVisibility(false);
-  }, [location]);
+  }, [location, setVisibility]);
 
   return (
     <div
@@ -23,7 +23,10 @@ function Menu({ isVisible, setVisibility }) {
         setVisibility(false);
       }}
     >
-      <ul className="nav-menu-dropdown list-container flex column ">
+      <ul
+        className="nav-menu-dropdown list-container flex column"
+        onClick={() => setVisibility(false)}
+      >
         <MenuLink
           title="Evenimente"
           icon={Icons.EvenimenteIcon}
@@ -74,9 +77,9 @@ function Menu({ isVisible, setVisibility }) {
           href={PATH.resurse.ghiduri.index}
           top={180}
         >
-          <MenuLink title="Ghidul Bobocului" icon={Icons.GhiduriIcon} />
+          {/* <MenuLink title="Ghidul Bobocului" icon={Icons.GhiduriIcon} />
           <MenuLink title="Erasmus" icon={Icons.GhiduriIcon} />
-          <MenuLink title="Licență" icon={Icons.GhiduriIcon} />
+          <MenuLink title="Licență" icon={Icons.GhiduriIcon} /> */}
         </MenuLink>
         <MenuLink
           title="Regulamente"
@@ -84,9 +87,9 @@ function Menu({ isVisible, setVisibility }) {
           href={PATH.resurse.regulamente.index}
           top={208}
         >
-          <MenuLink title="Carta universității" icon={Icons.RegulamenteIcon} />
+          {/* <MenuLink title="Carta universității" icon={Icons.RegulamenteIcon} />
           <MenuLink title="OSM" icon={Icons.RegulamenteIcon} />
-          <MenuLink title="Deplasări externe" icon={Icons.RegulamenteIcon} />
+          <MenuLink title="Deplasări externe" icon={Icons.RegulamenteIcon} /> */}
         </MenuLink>
         <MenuLink
           title="Calculator medie"
@@ -109,11 +112,11 @@ function Menu({ isVisible, setVisibility }) {
           href={PATH.resurse.legaturiExterne.index}
           top={320}
         >
-          <MenuLinkRedirect
+          {/* <MenuLinkRedirect
             title="Site UMF"
             icon={Icons.LinksIcon}
             href={LINKS.umf}
-          />
+          /> */}
         </MenuLink>
         <hr />
         <MenuLink

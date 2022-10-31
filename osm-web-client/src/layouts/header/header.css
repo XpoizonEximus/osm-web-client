@@ -6,9 +6,19 @@
 
 #header .img-container img {
   width: 100%;
+  position: relative;
+  filter: brightness(50%);
 }
 
-#header .header-card-alt {
+#header .img-container .img-overlay {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#header .img-overlay-alt {
   text-align: center;
   color: white;
   background-color: var(--primary);

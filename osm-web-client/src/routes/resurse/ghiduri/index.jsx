@@ -3,8 +3,7 @@ import "./ghiduri.css";
 
 import Header from "../../../layouts/header";
 import banner from "../../../assets/photos/guides-banner.jpg";
-import Button1 from "../../../components/buttons/button1";
-import Card2 from "../../../components/cards/card2";
+import CardResursa from "../../../components/cards/cardResursa";
 import { GhiduriIcon } from "../../../const/icons";
 
 import ghidErasmus from "../../../assets/files/Ghid ERASMUS.pdf";
@@ -29,20 +28,12 @@ function GhiduriPage() {
         </p>
         <br />
         <br />
-        <Button1
-          type="button"
-          click={(e) => {
-            ghiduriContent.current.scrollIntoView();
-          }}
-        >
-          Vezi toate ghidurile »
-        </Button1>
       </Header>
       <section id="content" className="main" ref={ghiduriContent}>
         <div className="content">
-          <Card2 title="Bobocul în OSM" icon={GhiduriIcon} />
-          <Card2 title="Erasmus" icon={GhiduriIcon} />
-          <Card2 title="Licență" icon={GhiduriIcon} />
+          <CardResursa title="Bobocul în OSM" icon={GhiduriIcon} />
+          <CardResursa title="Erasmus" icon={GhiduriIcon} />
+          <CardResursa title="Licență" icon={GhiduriIcon} />
         </div>
       </section>
     </div>

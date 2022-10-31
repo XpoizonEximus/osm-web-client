@@ -7,6 +7,10 @@ function Button1({ children, type = "link", click = "" }) {
     <Link to={click} className="link-button-1">
       {children}
     </Link>
+  ) : type === "a" ? (
+    <a href={click} className="link-button-1">
+      {children}
+    </a>
   ) : type === "button" ? (
     <button onClick={click} className="link-button-1">
       {children}

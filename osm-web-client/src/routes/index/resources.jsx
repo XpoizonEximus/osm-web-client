@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./resources.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +11,7 @@ import {
   faUserDoctor,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Card2 from "../../components/cards/card2";
+import CardResursa from "../../components/cards/cardResursa";
 import Button1 from "../../components/buttons/button1";
 import { PATH } from "../../const/const";
 
@@ -24,32 +23,32 @@ function Resources() {
           <h3 className="title">Resurse</h3>
           <p>Pentru a face studenția mai ușoară</p>
           <div className="grid-container">
-            <Card2
+            <CardResursa
               title="FAQ"
               icon={<FontAwesomeIcon icon={faCircleQuestion} />}
               href={PATH.resurse.faq.index}
             />
-            <Card2
+            <CardResursa
               title="Calculator medie"
               icon={<FontAwesomeIcon icon={faCalculator} />}
               href={PATH.resurse.calculatorMedie.index}
             />
-            <Card2
+            <CardResursa
               title="Amfiteatre"
               icon={<FontAwesomeIcon icon={faBuildingColumns} />}
               href={PATH.resurse.amfiteatreSali.index}
             />
-            <Card2
+            <CardResursa
               title="Ghid ERASMUS"
               icon={<FontAwesomeIcon icon={faScroll} />}
               href={PATH.resurse.ghiduri.index}
             />
-            <Card2
+            <CardResursa
               title="Ghid licență"
               icon={<FontAwesomeIcon icon={faGraduationCap} />}
               href={PATH.resurse.ghiduri.index}
             />
-            <Card2
+            <CardResursa
               title="Ghidul bobocului"
               icon={<FontAwesomeIcon icon={faUserDoctor} />}
               href={PATH.resurse.ghiduri.index}

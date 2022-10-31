@@ -101,13 +101,13 @@ function FaqPage() {
                 <a href="http://www.umfcluj.ro/informatii-ro/formulare-ro/category/5-formulare-studenti-masteranzi-doctoranzi-rezidenti">
                   site
                 </a>{" "}
-                sunt toate cererile, inclusiv una generală de completat cu ce
-                orice doriți. Ele se adresează în scris doamnei decan și se
-                depun la secretariat. Cel puțin unele secretare (vorbiți cu
-                colegii să vedeți dacă se aplică și anului vostru) acceptă
-                cererile, inclusiv online, trimise pe mail sau pe Teams, chiar
-                și cu semnătură electronică (pe PDF, nu neapărat oficială
-                cumpărată). Asta include adeverința de student.
+                sunt toate cererile, inclusiv una generală de completat orice
+                doriți. Ele se adresează în scris doamnei decan și se depun la
+                registratură. Cel puțin unele secretare (vorbiți cu colegii să
+                vedeți dacă se aplică și anului vostru) acceptă cererile,
+                inclusiv online, trimise pe mail sau pe Teams, chiar și cu
+                semnătură electronică (pe PDF, nu neapărat oficială cumpărată).
+                Asta include adeverința de student.
               </div>
               <div className="question">
                 Cât costă X? Care sunt taxele la Y? Cât costă un cămin?

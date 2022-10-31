@@ -2,36 +2,43 @@ import React from "react";
 import "./media.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { LINKS } from "../../const/const";
 
 function Media() {
   return (
-    <ul class="media-wrapper">
-      <li class="icon facebook">
-        <span class="tooltip">Facebook</span>
+    <div className="media-wrapper">
+      <a href={LINKS.media.facebook} className="icon facebook">
+        <span className="tooltip">Facebook</span>
         <span>
           <FontAwesomeIcon icon={faFacebookF} />
         </span>
-      </li>
-      <li class="icon instagram">
-        <span class="tooltip">Instagram</span>
+      </a>
+      <a href={LINKS.media.instagram} className="icon instagram">
+        <span className="tooltip">Instagram</span>
         <span>
           <FontAwesomeIcon icon={faInstagram} />
         </span>
-      </li>
-      <li class="icon linkedin">
-        <span class="tooltip">LinkedIn</span>
+      </a>
+      <a href="/" className="icon linkedin">
+        <span className="tooltip">LinkedIn</span>
         <span>
           <FontAwesomeIcon icon={faLinkedinIn} />
         </span>
-      </li>
-      <li class="icon youtube">
-        <span class="tooltip">YouTube</span>
+      </a>
+      <a href={LINKS.media.youtube} className="icon youtube">
+        <span className="tooltip">YouTube</span>
         <span>
           <FontAwesomeIcon icon={faYoutube} />
         </span>
-      </li>
-    </ul>
+      </a>
+    </div>
   );
 }
 

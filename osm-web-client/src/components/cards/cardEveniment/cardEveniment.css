@@ -16,7 +16,6 @@
 }
 
 .cardEveniment:hover {
-  cursor: pointer;
   transform: translate(0px, -10px);
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5);
 }
@@ -28,16 +27,49 @@
 
 .cardEveniment .container {
   width: 60%;
+  padding: 30px 5vw;
+  font-size: 1.2em;
 }
 
 .cardEveniment .title {
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 .cardEveniment .description {
-  font-size: 1.2em;
-  width: 85%;
   text-align: justify;
+  margin: 0px;
+}
+
+.cardEveniment .description.restrict {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.cardEveniment .access {
+  font-size: 0.7em;
+}
+
+.cardEveniment .see-more {
+  display: inline-block;
+  align-self: flex-start;
+
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-family-title);
+  font-size: 1.1em;
+  color: var(--light);
+}
+
+.cardEveniment .see-more:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -48,7 +80,7 @@
   .cardEveniment img {
     width: 100%;
   }
-  
+
   .cardEveniment .container {
     width: 100%;
   }

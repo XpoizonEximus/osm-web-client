@@ -1,16 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./resurse.css";
 
 import Header from "../../layouts/header";
 import banner from "../../assets/photos/resources-banner.jpg";
-import Button1 from "../../components/buttons/button1";
-import Card2, { Card2Redirect } from "../../components/cards/card2";
+import CardResursa, {
+  CardResursaRedirect,
+} from "../../components/cards/cardResursa";
 import * as Icons from "../../const/icons";
 
 import { LINKS, PATH } from "../../const/const";
 
 function ResursePage() {
-  window.scrollTo(0, 0);
+  useEffect(() => window.scrollTo(0, 0), []);
   const resurseContent = useRef(null);
 
   return (
@@ -24,48 +25,45 @@ function ResursePage() {
         </p>
         <br />
         <br />
-        <Button1
-          type="button"
-          click={(e) => {
-            resurseContent.current.scrollIntoView();
-          }}
-        >
-          Vezi toate resursele »
-        </Button1>
       </Header>
       <section id="content" className="main" ref={resurseContent}>
         <div className="content">
-          <Card2
+          <CardResursa
             title="FAQ"
             icon={Icons.FaqIcon}
             href={"/".concat(PATH.resurse.faq.index)}
           />
-          <Card2
+          <CardResursa
             title="Ghiduri"
             icon={Icons.GhiduriIcon}
             href={"/".concat(PATH.resurse.ghiduri.index)}
           />
-          <Card2
+          <CardResursa
             title="Regulamente"
             icon={Icons.RegulamenteIcon}
             href={"/".concat(PATH.resurse.regulamente.index)}
           />
-          <Card2
+          <CardResursa
             title="Calculator medie"
             icon={Icons.CalculatorMedieIcon}
             href={"/".concat(PATH.resurse.calculatorMedie.index)}
           />
-          <Card2
+          <CardResursa
             title="Amfiteatre și săli"
             icon={Icons.AmfiteatreSaliIcon}
             href={"/".concat(PATH.resurse.amfiteatreSali.index)}
           />
-          <Card2Redirect
+          <CardResursaRedirect
             title="Catalog Emsys"
             icon={Icons.LinksIcon}
             href={LINKS.emsys}
           />
-          <Card2
+          <CardResursaRedirect
+            title="Platforma cereri UMF"
+            icon={Icons.LinksIcon}
+            href={LINKS.cereri}
+          />
+          <CardResursa
             title="Legături externe"
             icon={Icons.LinksIcon}
             href={"/".concat(PATH.resurse.legaturiExterne.index)}

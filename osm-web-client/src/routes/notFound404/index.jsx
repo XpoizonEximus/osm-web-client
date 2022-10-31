@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 function NotFound404Page() {
-  window.scrollTo(0, 0);
+  useEffect(() => window.scrollTo(0, 0), []);
   return (
     <h1
       style={{

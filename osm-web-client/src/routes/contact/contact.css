@@ -1,0 +1,77 @@
+@import url("../../const/const.css");
+
+#contact .main-form {
+  background-image: url(../../assets/photos/background-tile.png);
+}
+
+#contact .content {
+  width: 800px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#contact .form {
+  width: 100%;
+  margin: 0px;
+  padding: 20px 40px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 10px;
+  font-size: 1.3em;
+  align-items: flex-start;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+#contact .form .section-title {
+  margin: 40px 0px 10px 20px;
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+#contact .form label {
+  font-family: var(--font-family-title);
+  text-align: left;
+  display: flex;
+  margin-top: 10px;
+  color: var(--secondary);
+  font-size: 1.1em;
+}
+
+#contact .form input,
+#contact .form textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 3px 0px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-family: var(--font-family-text);
+}
+
+#contact .form textarea {
+  resize: vertical;
+}
+
+#contact .form .link-button-1 {
+  align-self: center;
+  margin-top: 40px;
+}
+
+#contact .main-details {
+    background-color: var(--primary);
+}
+
+#contact .details {
+    color: white;
+    text-align: left;
+    align-self: flex-start;
+    font-size: 1.5em;
+    font-family: var(--font-family-title);
+    padding-bottom: 30px;
+}
+
+#contact .main-details iframe {
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}

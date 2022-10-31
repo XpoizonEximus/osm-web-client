@@ -1,19 +1,26 @@
 import React from "react";
 import "./header.css";
 
-import HeaderCard from "../../components/cards/headerCard";
+import useWindowDimensions from "../../api/hooks/useWindowDimensions";
 
 function Header({ children, img, top }) {
-  let card = window.innerWidth > window.innerHeight * 1.5;
+  const { width, height } = useWindowDimensions();
   return (
     <header id="header">
       <div className="img-container">
         <img src={img} alt="banner" />
+        {width > height * 1.5 ? (
+          <div className="img-overlay flex column" top={top}>
+            {children}
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
-      {card ? (
-        <HeaderCard top={top}>{children}</HeaderCard>
+      {width > height * 1.5 ? (
+        <></>
       ) : (
-        <div className="header-card-alt flex column">{children}</div>
+        <div className="img-overlay-alt flex column">{children}</div>
       )}
     </header>
   );

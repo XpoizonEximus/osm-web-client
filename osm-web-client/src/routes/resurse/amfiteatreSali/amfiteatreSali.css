@@ -10,6 +10,11 @@
   width: 1000px;
 }
 
+#amfiteatre-sali #header .title {
+  align-items: center;
+  text-align: center;
+}
+
 @media (max-width: 1000px) {
   #amfiteatre-sali .content {
     width: 100%;
@@ -139,8 +144,8 @@
 }
 
 .amfiteatru .content video {
-max-height: 80vh;
-max-width: min(100%, 80vw);
-margin: 20px;
-border-radius: 20px;
+  max-height: 80vh;
+  max-width: min(100%, 80vw);
+  margin: 20px;
+  border-radius: 20px;
 }

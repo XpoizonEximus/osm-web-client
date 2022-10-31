@@ -57,7 +57,7 @@ export const PATH = {
       aleman: {
         index: "aleman/",
         maps: "https://goo.gl/maps/Y83tYfYBAGFtM4Jz5",
-        model3d: "",
+        model3d: "https://panocube.ro/umf/#ut-portfolio-details-wrap-6185",
       },
       anatomie: {
         index: "anatomie/",
@@ -77,17 +77,17 @@ export const PATH = {
       opris: {
         index: "opris/",
         maps: "https://goo.gl/maps/Y83tYfYBAGFtM4Jz5",
-        model3d: "",
+        model3d: "https://panocube.ro/umf/#ut-portfolio-details-wrap-6185",
       },
       cucuianuMantaPreda: {
         index: "cucuianu-manta-preda/",
         maps: "https://goo.gl/maps/a6MwbdAxxsqfmX599",
-        model3d: "",
+        model3d: "https://panocube.ro/umf/#ut-portfolio-details-wrap-6185",
       },
       dermatologie: {
         index: "dermatologie/",
         maps: "https://goo.gl/maps/ygscj9HTapJ3TkNS9",
-        model3d: "",
+        model3d: "https://panocube.ro/umf/#ut-portfolio-details-wrap-6185",
       },
       dorofteiu: {
         index: "dorofteiu/",
@@ -122,7 +122,7 @@ export const PATH = {
       popper: {
         index: "popper/",
         maps: "https://goo.gl/maps/GYJDgrP95RcXMfgdA",
-        model3d: "",
+        model3d: "https://panocube.ro/umf/#ut-portfolio-details-wrap-6185",
       },
       radiologie: {
         index: "radiologie/",
@@ -172,12 +172,12 @@ export const PATH = {
       registratura: {
         index: "registratura/",
         maps: "https://goo.gl/maps/D8hoosHknTnUFcC68",
-        model3d: "",
+        model3d: "https://panocube.ro/umf/#ut-portfolio-details-wrap-6185",
       },
       multimedia: {
         index: "multimedia/",
         maps: "https://goo.gl/maps/CghiRY74VPXdzEst8",
-        model3d: "",
+        model3d: "https://panocube.ro/umf/#ut-portfolio-details-wrap-6185",
       },
       genetica: {
         index: "genetica/",
@@ -192,6 +192,16 @@ export const PATH = {
       moldovan: {
         index: "moldovan/",
         maps: "https://goo.gl/maps/3hpTGbcH1BAC4AEC7",
+        model3d: "https://panocube.ro/umf/#ut-portfolio-details-wrap-6185",
+      },
+      ofta: {
+        index: "oftalmologie/",
+        maps: "https://goo.gl/maps/DUxGDXwYFJhrQ7y99",
+        model3d: "",
+      },
+      gine1: {
+        index: "ginecologie1/",
+        maps: "https://goo.gl/maps/5jt9UPPr4HdCFYFRA",
         model3d: "",
       },
     },
@@ -206,4 +216,25 @@ export const LINKS = {
   old: "https://osmcluj.ro/",
   umf: "http://www.umfcluj.ro/",
   emsys: "https://infostud.umfcluj.ro/INFOSTUD/faces/Login.xhtml",
+  cereri:
+    "https://digital.umfcluj.ro/jobrouter/index.php?cmd=PublicStart&ps=78fce30258b09d55905bdaace01fe779&username=webuser&fbclid=IwAR3jx8vROfTJp7EdYSkT6iTQU4q_4Xh1J1p0MXEOerkYB1Va0M-4b-wX_xE",
+  media: {
+    facebook: "https://www.facebook.com/OSMCluj",
+    instagram: "https://www.instagram.com/osm_cluj",
+    youtube: "https://www.youtube.com/c/OSMClujNapoca",
+  },
+};
+
+export const API = {
+  proiecte: {
+    sumarry: "https://api.osmcluj.ro/src/crud_s/osm_projects/index.php?q=all",
+    detail:
+      "https://api.osmcluj.ro/src/crud_s/osm_projects/index.php?q=one&id=",
+    random: "https://api.osmcluj.ro/src/crud_s/osm_projects/index.php?q=six",
+  },
+  evenimente: "https://api.osmcluj.ro/src/crud_s/osm_events/index.php?q=all",
+  amfiteatre: {
+    sumarry: "https://api.osmcluj.ro/src/crud_s/osm_halls/index.php?q=all",
+    detail: "https://api.osmcluj.ro/src/crud_s/osm_halls/index.php?q=one&id=",
+  },
 };

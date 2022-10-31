@@ -4,7 +4,7 @@ import "./links.css";
 import Header from "../../../layouts/header";
 import banner from "../../../assets/photos/links-banner.jpg";
 import Button1 from "../../../components/buttons/button1";
-import { Card2Redirect } from "../../../components/cards/card2";
+import { CardResursaRedirect } from "../../../components/cards/cardResursa";
 import { LinksIcon } from "../../../const/icons";
 import { LINKS } from "../../../const/const";
 
@@ -29,11 +29,20 @@ function LinksPage() {
       </Header>
       <section id="content" className="main" ref={LinksContent}>
         <div className="content">
-          <Card2Redirect title="Site UMF" icon={LinksIcon} href={LINKS.umf} />
-          <Card2Redirect
+          <CardResursaRedirect
+            title="Site UMF"
+            icon={LinksIcon}
+            href={LINKS.umf}
+          />
+          <CardResursaRedirect
             title="Site Info-Stud"
             icon={LinksIcon}
             href={LINKS.emsys}
+          />
+          <CardResursaRedirect
+            title="Platforma cereri UMF"
+            icon={LinksIcon}
+            href={LINKS.cereri}
           />
         </div>
       </section>
