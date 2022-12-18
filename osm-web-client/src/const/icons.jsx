@@ -11,6 +11,7 @@ import {
   faCalculator,
   faBuildingColumns,
   faLink,
+  faBook,
   faHandshake,
   faPeopleGroup,
   faAddressCard,
@@ -25,6 +26,7 @@ export const RegulamenteIcon = <FontAwesomeIcon icon={faScroll} />;
 export const CalculatorMedieIcon = <FontAwesomeIcon icon={faCalculator} />;
 export const AmfiteatreSaliIcon = <FontAwesomeIcon icon={faBuildingColumns} />;
 export const LinksIcon = <FontAwesomeIcon icon={faLink} />;
+export const EmsysIcon = <FontAwesomeIcon icon={faBook} />;
 export const ParteneriIcon = <FontAwesomeIcon icon={faHandshake} />;
 export const EchipaIcon = <FontAwesomeIcon icon={faPeopleGroup} />;
 export const ContactIcon = <FontAwesomeIcon icon={faAddressCard} />;

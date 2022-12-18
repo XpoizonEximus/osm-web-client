@@ -28,7 +28,7 @@ function Navigation(props) {
             </div>
           </Link>
           <div className="links-container small flex row">
-          <NavigationLink
+            <NavigationLink
               padding="50px"
               href={PATH.evenimente.index}
               highlight={true}

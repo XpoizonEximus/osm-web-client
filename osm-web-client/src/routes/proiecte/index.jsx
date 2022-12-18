@@ -5,10 +5,10 @@ import ProiectePage from "./proiecte";
 import NotFound404Page from "../notFound404";
 import ProiectPage from "./proiect.jsx";
 
-import { useProiecteSumarry } from "../../api/hooks/axios/proiecte";
+import { useProiecte } from "../../api/hooks/axios/proiecte";
 
 function ProiecteRouter() {
-  const data = useProiecteSumarry();
+  const data = useProiecte();
 
   return (
     <Routes>
@@ -18,7 +18,8 @@ function ProiecteRouter() {
       {data?.map((proiect, i) => {
         return (
           <Route
-            path={proiect.id}
+            key={proiect.id}
+            path={proiect.name}
             element={<ProiectPage index={proiect.id} />}
           />
         );

@@ -14,6 +14,7 @@ import ShopPage from "./shop";
 import ResursePage from "./resurse";
 import RegulamentePage from "./resurse/regulamente";
 import GhiduriPage from "./resurse/ghiduri";
+import RapoartePage from "./resurse/rapoarte";
 import LinksPage from "./resurse/links";
 import CalculatorMediePage from "./resurse/calculatorMedie";
 import AmfiteatreSaliRouter from "./resurse/amfiteatreSali";
@@ -22,6 +23,8 @@ import FaqPage from "./resurse/faq";
 import EchipaPage from "./echipa";
 import ParteneriPage from "./parteneri";
 import ContactPage from "./contact";
+
+import PoliticaConfidentialitatePage from "./politicaConfidentialitate";
 
 function Router() {
   return (
@@ -38,12 +41,16 @@ function Router() {
         <Route path={PATH.shop.index} element={<ShopPage />} />
         <Route path={PATH.resurse.index} element={<ResursePage />} />
         <Route
-          path={PATH.resurse.regulamente.index.concat("*")}
+          path={PATH.resurse.regulamente.index}
           element={<RegulamentePage />}
         />
         <Route
-          path={PATH.resurse.ghiduri.index.concat("*")}
+          path={PATH.resurse.ghiduri.index}
           element={<GhiduriPage />}
+        />
+        <Route
+          path={PATH.resurse.rapoarte.index}
+          element={<RapoartePage />}
         />
         <Route
           path={PATH.resurse.legaturiExterne.index}
@@ -59,8 +66,16 @@ function Router() {
         />
         <Route path={PATH.resurse.faq.index} element={<FaqPage />} />
         <Route path={PATH.echipa.index} element={<EchipaPage />} />
+        <Route
+          path={PATH.echipa.index.concat(":id")}
+          element={<EchipaPage />}
+        />
         <Route path={PATH.parteneri.index} element={<ParteneriPage />} />
         <Route path={PATH.contact.index} element={<ContactPage />} />
+        <Route
+          path={PATH.politicaConfidentialitate.index}
+          element={<PoliticaConfidentialitatePage />}
+        />
       </Route>
     </Routes>
   );

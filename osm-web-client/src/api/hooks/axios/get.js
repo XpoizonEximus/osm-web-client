@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 export const getData = async (path) => {
-  if (typeof path === "undefined") return {};
+  if (!typeof path) return {};
   try {
     const response = await axios.get(path);
     return response.data;

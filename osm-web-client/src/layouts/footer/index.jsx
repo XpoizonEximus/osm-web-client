@@ -29,16 +29,28 @@ function Footer() {
                     <Link to={PATH.parteneri.index}>Parteneri și sponsori</Link>
                   </li>
                   <li>
-                    <Link to={PATH.echipa.index}>Consiliu director</Link>
+                    <Link to={`${PATH.echipa.index}${PATH.echipa.cd}/`}>
+                      Consiliu director
+                    </Link>
                   </li>
                   <li>
-                    <Link to={PATH.echipa.index}>Reprezentanți de an</Link>
+                    <Link
+                      to={`${PATH.echipa.index}${PATH.echipa.reprezentanti}/`}
+                    >
+                      Reprezentanți de an
+                    </Link>
                   </li>
                   <li>
-                    <Link to={PATH.echipa.index}>Coordonatori proiecte</Link>
+                    <Link
+                      to={`${PATH.echipa.index}${PATH.echipa.coordonatori}/`}
+                    >
+                      Coordonatori proiecte
+                    </Link>
                   </li>
                   <li>
-                    <Link to={"/"}>Politica de confidențialitate</Link>
+                    <Link to={PATH.politicaConfidentialitate.index}>
+                      Politica de confidențialitate
+                    </Link>
                   </li>
                 </ul>
               </div>

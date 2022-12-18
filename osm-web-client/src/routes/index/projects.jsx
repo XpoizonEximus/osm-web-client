@@ -21,10 +21,10 @@ function Projects() {
                 <CardProiect
                   key={i}
                   img={proiect.img_path}
-                  title={proiect.name}
-                  href={PATH.proiecte.index.concat(proiect.id)}
+                  title={proiect.title}
+                  href={PATH.proiecte.index.concat(proiect.name)}
                 >
-                  {proiect.description}
+                  {proiect.descr}
                 </CardProiect>
               );
             })}

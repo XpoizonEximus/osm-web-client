@@ -58,25 +58,6 @@
 }
 
 .proiect .contact {
-  color: var(--primary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  padding: 40px;
-  margin: 40px 0px;
-  border-radius: 20px;
-}
-
-.proiect .contact .profil {
-  max-width: 200px;
-  border-radius: 50%;
-}
-.proiect .contact .nume {
-  padding: 20px 10px 5px 10px;
-}
-
-.proiect .contact .subtitle {
-  padding: 0px;
-  color: var(--dark);
+  max-width: 400px;
+  margin: 20px;
 }

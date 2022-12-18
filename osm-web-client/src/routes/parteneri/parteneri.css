@@ -1,0 +1,55 @@
+@import url("../../const/const.css");
+
+#parteneri .main {
+    background-color: var(--primary);
+    color: white;
+  
+    align-items: center;
+    text-align: center;
+  }
+  
+  #parteneri .main section {
+    padding-top: 30px;
+  }
+  
+  #parteneri .main hr {
+    background-image: linear-gradient(to right, transparent, white, transparent);
+  }
+  
+  #parteneri .content {
+    max-width: 1300px;
+    padding: 0px 50px;
+  }
+  
+  @media (max-width: 1300px) {
+    #parteneri .content {
+      max-width: 890px;
+    }
+  }
+  
+  @media (max-width: 890px) {
+    #parteneri .content {
+      max-width: 480px;
+    }
+  }
+  
+  #parteneri .content .grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+    padding: 20px 0px;
+  }
+  
+  @media (max-width: 1300px) {
+    #parteneri .content .grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 890px) {
+    #parteneri .content .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

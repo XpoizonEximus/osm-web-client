@@ -13,6 +13,7 @@ function EvenimentePage() {
   const evenimenteContent = useRef(null);
 
   const data = useEvenimente();
+  console.log(data);
 
   return (
     <div id="evenimente">
@@ -44,8 +45,8 @@ function EvenimentePage() {
           {data?.map((eveniment, i) => (
             <CardEveniment
               img={eveniment?.img_path}
-              title={eveniment?.name}
-              description={eveniment?.description}
+              title={eveniment?.title}
+              description={eveniment?.descr}
               href={eveniment?.url}
             />
           ))}

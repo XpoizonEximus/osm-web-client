@@ -3,12 +3,15 @@ import "./regulamente.css";
 
 import Header from "../../../layouts/header";
 import banner from "../../../assets/photos/rules-banner.png";
-import CardResursa from "../../../components/cards/cardResursa";
+import { CardResursaRedirect } from "../../../components/cards/cardResursa";
 import { RegulamenteIcon } from "../../../const/icons";
+import useRegulamente from "../../.././api/hooks/axios/regulamente";
+import { useEffect } from "react";
 
 function RegulamentePage() {
-  window.scrollTo(0, 0);
+  useEffect(() => window.scrollTo(0, 0), []);
   const regulamenteContent = useRef(null);
+  const data = useRegulamente();
 
   return (
     <div id="regulamente">
@@ -20,9 +23,16 @@ function RegulamentePage() {
       </Header>
       <section id="content" className="main" ref={regulamenteContent}>
         <div className="content">
-          <CardResursa title="OSM" icon={RegulamenteIcon} />
-          <CardResursa title="Deplasări externe" icon={RegulamenteIcon} />
-          <CardResursa title="Carta Universității" icon={RegulamenteIcon} />
+          {data?.map((element, index) => {
+            return (
+              <CardResursaRedirect
+                key={index}
+                title={element?.descr}
+                icon={RegulamenteIcon}
+                href={element?.file_path}
+              />
+            );
+          })}
         </div>
       </section>
     </div>

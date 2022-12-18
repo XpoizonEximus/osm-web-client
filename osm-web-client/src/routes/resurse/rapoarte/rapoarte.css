@@ -1,0 +1,39 @@
+@import url("../../../const/const.css");
+
+#rapoarte #header .title {
+  padding: 0px;
+}
+
+#rapoarte #header .subtitle {
+  font-size: 1.5em;
+}
+
+#rapoarte .main {
+  background-color: var(--primary);
+}
+
+#rapoarte .content {
+  max-width: 1200px;
+
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  #rapoarte .content {
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  #rapoarte .content {
+    padding: 100px 20px;
+    grid-template-columns: 1fr;
+  }
+}
+

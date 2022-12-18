@@ -1,0 +1,54 @@
+@import url("../../const/const.css");
+
+#echipa .main {
+  background-color: var(--primary);
+  color: white;
+
+  align-items: center;
+  text-align: center;
+}
+
+#echipa .main section {
+  padding-top: 30px;
+}
+
+#echipa .main hr {
+  background-image: linear-gradient(to right, transparent, white, transparent);
+}
+
+#echipa .content {
+  max-width: 1300px;
+  padding: 0px 50px;
+}
+
+@media (max-width: 1300px) {
+  #echipa .content {
+    max-width: 890px;
+  }
+}
+
+@media (max-width: 890px) {
+  #echipa .content {
+    max-width: 480px;
+  }
+}
+
+#echipa .content .grid-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  padding: 20px 0px;
+}
+
+@media (max-width: 1300px) {
+  #echipa .content .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 890px) {
+  #echipa .content .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

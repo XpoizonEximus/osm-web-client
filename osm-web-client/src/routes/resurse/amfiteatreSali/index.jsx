@@ -5,10 +5,10 @@ import AmfiteatreSaliPage from "./amfiteatreSali";
 import AmfiteatruPage from "./amfiteatru";
 import NotFound404Page from "../../notFound404";
 
-import { useAmfiteatreSummary } from "../../../api/hooks/axios/amfiteatre";
+import { useAmfiteatre } from "../../../api/hooks/axios/amfiteatre";
 
 function AmfiteatreSaliRouter() {
-  const data = useAmfiteatreSummary();
+  const data = useAmfiteatre();
 
   return (
     <Routes>
@@ -17,7 +17,8 @@ function AmfiteatreSaliRouter() {
 
       {data?.map((element, index) => (
         <Route
-          path={element?.id_path}
+          key={index}
+          path={element?.name}
           element={<AmfiteatruPage id={element?.id} />}
         />
       ))}

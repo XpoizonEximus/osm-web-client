@@ -29,7 +29,7 @@ function CardAmfiteatru({
         <p className="flex">{subtitle}</p>
         <div className="stretcher column"></div>
         <div className="buttons-container flex row">
-          {maps !== "" ? (
+          {maps && maps !== "" ? (
             <a href={maps}>
               <FontAwesomeIcon icon={faMapLocationDot} />{" "}
               <div style={{ padding: "2px" }}>Maps</div>
@@ -37,12 +37,12 @@ function CardAmfiteatru({
           ) : (
             <></>
           )}
-          {model3d !== "" && maps !== "" ? (
+          {model3d && model3d !== "" && maps && maps !== "" ? (
             <div className="stretcher row"></div>
           ) : (
             <></>
           )}
-          {model3d !== "" ? (
+          {model3d && model3d !== "" ? (
             <a href={model3d}>
               <FontAwesomeIcon icon={faCube} />{" "}
               <div style={{ padding: "2px" }}>3D Model</div>

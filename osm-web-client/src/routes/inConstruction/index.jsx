@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 
 function InConstructionPage() {
   useEffect(() => window.scrollTo(0, 0), []);

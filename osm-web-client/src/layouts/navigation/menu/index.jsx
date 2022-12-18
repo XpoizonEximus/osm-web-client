@@ -38,31 +38,6 @@ function Menu({ isVisible, setVisibility }) {
           href={PATH.proiecte.index}
           top={77}
         >
-          {/* <MenuLink title="Tutori pentru noua generație" />
-          <MenuLink title="MEDSTIC - Trupa de teatru a facultăţii" />
-          <MenuLink title="Teddy Bear Hospital" />
-          <MenuLink title="Disaster Medicine Preparedness" />
-          <MenuLink title="Zilele Educaţiei Medicale" />
-          <MenuLink title="Artistic Anatomy" />
-          <MenuLink title="Medici pentru tine" />
-          <MenuLink title="CORD – Clubul de Oratorie, Retorică şi Dezbateri" />
-          <MenuLink title="Văd Voci – Breaking the Silence" />
-          <MenuLink title="Twinning Project" />
-          <MenuLink title="3S – SCORA" />
-          <MenuLink title="Sănătate în paşi de dans" />
-          <MenuLink title="Medstrings Orchestra" />
-          <MenuLink title="Sport pentru Sănătate" />
-          <MenuLink title="Cenaclul MedFolk" />
-          <MenuLink title="Donează sânge, fii erou!" />
-          <MenuLink title="Road Safety" />
-          <MenuLink title="Schimburi internaţionale" />
-          <MenuLink title="Micii sanitari" />
-          <MenuLink title="HEART" />
-          <MenuLink title="Medical Research Education" />
-          <MenuLink title="Medicalis" />
-          <MenuLink title="Focul viu" />
-          <MenuLink title="Transmed" />
-          <MenuLink title="Împreună pentru sănătate" /> */}
         </MenuLink>
         <MenuLink title="Shop" icon={Icons.ShopIcon} href={PATH.shop.index} />
         <hr />
@@ -77,9 +52,6 @@ function Menu({ isVisible, setVisibility }) {
           href={PATH.resurse.ghiduri.index}
           top={180}
         >
-          {/* <MenuLink title="Ghidul Bobocului" icon={Icons.GhiduriIcon} />
-          <MenuLink title="Erasmus" icon={Icons.GhiduriIcon} />
-          <MenuLink title="Licență" icon={Icons.GhiduriIcon} /> */}
         </MenuLink>
         <MenuLink
           title="Regulamente"
@@ -87,9 +59,6 @@ function Menu({ isVisible, setVisibility }) {
           href={PATH.resurse.regulamente.index}
           top={208}
         >
-          {/* <MenuLink title="Carta universității" icon={Icons.RegulamenteIcon} />
-          <MenuLink title="OSM" icon={Icons.RegulamenteIcon} />
-          <MenuLink title="Deplasări externe" icon={Icons.RegulamenteIcon} /> */}
         </MenuLink>
         <MenuLink
           title="Calculator medie"
@@ -102,8 +71,8 @@ function Menu({ isVisible, setVisibility }) {
           href={PATH.resurse.amfiteatreSali.index}
         />
         <MenuLinkRedirect
-          title="Catalog Emsys"
-          icon={Icons.LinksIcon}
+          title="EMSYS"
+          icon={Icons.EmsysIcon}
           href={LINKS.emsys}
         />
         <MenuLink
@@ -112,11 +81,6 @@ function Menu({ isVisible, setVisibility }) {
           href={PATH.resurse.legaturiExterne.index}
           top={320}
         >
-          {/* <MenuLinkRedirect
-            title="Site UMF"
-            icon={Icons.LinksIcon}
-            href={LINKS.umf}
-          /> */}
         </MenuLink>
         <hr />
         <MenuLink

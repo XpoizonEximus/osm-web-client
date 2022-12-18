@@ -1,7 +1,7 @@
 @import url("../../const/const.css");
 
 .scrolldown {
-  --color: var(--primary);
+  --color: white;
   --sizeX: 30px;
   --sizeY: 50px;
   position: relative;
@@ -12,6 +12,7 @@
   border-radius: 50px;
   box-sizing: border-box;
   margin-bottom: 16px;
+  margin-top: 20px;
 }
 
 .scrolldown::before {

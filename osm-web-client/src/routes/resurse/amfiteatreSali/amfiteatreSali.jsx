@@ -1,33 +1,46 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./amfiteatreSali.css";
 
 import Header from "../../../layouts/header";
 import banner from "../../../assets/photos/aula.jpg";
 
+import SearchBox from "../../../components/searchBox";
+
 import CardAmfiteatru from "../../../components/cards/cardAmfiteatru";
 
-import { useAmfiteatreSummary } from "../../../api/hooks/axios/amfiteatre";
+import { useAmfiteatre } from "../../../api/hooks/axios/amfiteatre";
+import { useState } from "react";
 
 function AmfiteatreSaliPage() {
-  window.scrollTo(0, 0);
-  const data = useAmfiteatreSummary();
+  useEffect(() => window.scrollTo(0, 0), []);
+  const [src, setSrc] = useState();
+  const data = useAmfiteatre(src);
   return (
     <div id="amfiteatre-sali">
-      <Header img={banner} top={100}>
+      <Header img={banner} top={100} scrollIcon={false}>
         <h2 className="title">Amfiteatre și săli de curs</h2>
+        <SearchBox
+          placeholder="Caută amfiteatre și săli..."
+          textSetter={setSrc}
+        />
       </Header>
       <section className="main">
         <div className="content">
-          {data?.map((element, index) => (
-            <CardAmfiteatru
-              img={element?.img_path}
-              href={element?.id_path}
-              title={element?.name}
-              subtitle={element?.subname}
-              maps={element?.maps_link}
-              model3d={element?.["3d_object"]}
-            />
-          ))}
+          {data?.map ? (
+            data?.map((element, index) => (
+              <CardAmfiteatru
+                key={index}
+                img={element?.img_path}
+                href={element?.name}
+                title={element?.title}
+                subtitle={element?.subtitle}
+                maps={element?.maps_url}
+                model3d={element?.tridim_url}
+              />
+            ))
+          ) : (
+            <></>
+          )}
         </div>
       </section>
     </div>

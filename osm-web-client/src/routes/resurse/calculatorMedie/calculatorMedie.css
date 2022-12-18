@@ -1,0 +1,68 @@
+@import url("../../../const/const.css");
+
+#calculator-medie .main-form {
+  background-image: url(../../../assets/photos/background-tile.png);
+}
+
+#calculator-medie .content {
+  max-width: 1200px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#calculator-medie .form {
+  width: 100%;
+  margin: 0px;
+  padding: 40px;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 10px;
+  font-size: 1.3em;
+  align-items: flex-start;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#calculator-medie .form select {
+  font-family: var(--font-family-text);
+  font-size: 1em;
+  background-color: white;
+  color: var(--dark);
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 15px;
+}
+
+#calculator-medie .form .materie-container {
+  margin: 5px 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
+  gap: 10px;
+}
+
+#calculator-medie .form .materie-container .elem {
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#calculator-medie .form .final {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+#calculator-medie .form .final .button-container,
+#calculator-medie .form .final .media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#calculator-medie .form .final .media-container {
+  font-size: 1.5em;
+  font-weight: bold;
+}

@@ -44,6 +44,11 @@ function ResursePage() {
             href={"/".concat(PATH.resurse.regulamente.index)}
           />
           <CardResursa
+            title="Rapoartele reprezentanților"
+            icon={Icons.RegulamenteIcon}
+            href={"/".concat(PATH.resurse.rapoarte.index)}
+          />
+          <CardResursa
             title="Calculator medie"
             icon={Icons.CalculatorMedieIcon}
             href={"/".concat(PATH.resurse.calculatorMedie.index)}

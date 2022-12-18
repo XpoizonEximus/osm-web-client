@@ -1,0 +1,15 @@
+@import url("../../const/const.css");
+
+.search-box {
+  font-family: var(--font-family-text);
+  border: 0;
+  color: var(--dark);
+  width: 80%;
+  font-size: 1.3em;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  appearance: none;
+  position: relative;
+  outline: none;
+}

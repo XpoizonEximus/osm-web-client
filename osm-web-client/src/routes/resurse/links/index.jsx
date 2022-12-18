@@ -1,16 +1,15 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./links.css";
 
 import Header from "../../../layouts/header";
 import banner from "../../../assets/photos/links-banner.jpg";
-import Button1 from "../../../components/buttons/button1";
 import { CardResursaRedirect } from "../../../components/cards/cardResursa";
 import { LinksIcon } from "../../../const/icons";
 import { LINKS } from "../../../const/const";
+import { useEffect } from "react";
 
 function LinksPage() {
-  window.scrollTo(0, 0);
-  const LinksContent = useRef(null);
+  useEffect(() => window.scrollTo(0, 0), []);
 
   return (
     <div id="links">
@@ -18,16 +17,8 @@ function LinksPage() {
         <h1 className="title">Legături externe</h1>
         <br />
         <br />
-        <Button1
-          type="button"
-          click={(e) => {
-            LinksContent.current.scrollIntoView();
-          }}
-        >
-          Vezi toate legăturile »
-        </Button1>
       </Header>
-      <section id="content" className="main" ref={LinksContent}>
+      <section id="content" className="main">
         <div className="content">
           <CardResursaRedirect
             title="Site UMF"

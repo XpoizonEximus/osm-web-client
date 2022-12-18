@@ -5,7 +5,7 @@
 }
 
 #contact .content {
-  width: 800px;
+  max-width: 800px;
   margin: 20px;
   padding: 20px;
 }
@@ -14,12 +14,17 @@
   width: 100%;
   margin: 0px;
   padding: 20px 40px;
-  background-color: var(--primary);
   color: white;
   border-radius: 10px;
   font-size: 1.3em;
   align-items: flex-start;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+#contact .form.notsent {
+  background-color: var(--primary);
+}
+#contact .form.sent {
+  background-color: limegreen;
 }
 
 #contact .form .section-title {
@@ -71,7 +76,7 @@
 }
 
 #contact .main-details iframe {
-    height: 50vh;
+    height: 65vh;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
 }
