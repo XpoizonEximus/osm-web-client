@@ -189,4 +189,7 @@ export const API = {
   get parteneri() {
     return `${this.index}/sponsors/?q=all`;
   },
+  get links() {
+    return `${this.index}/guidelines/?q=flag&flag=guideline`;
+  },
 };

@@ -18,14 +18,17 @@ function CalculatorMediePage() {
 
   const materii = api.useMaterii(an);
   const [data, setData] = useState({});
+
+  const [mediaA, setMediaA] = useState(0.0);
+  const [meadiaP, setMediaP] = useState(0.0);
   const [media, setMedia] = useState(0.0);
+  useEffect(() => setMedia((mediaA + meadiaP) / 2), [mediaA, meadiaP]);
 
   return (
     <div id="calculator-medie">
       <Header img={banner} top={150}>
         <h1 className="title">Calculator medie</h1>
         <div style={{ height: "40px" }} />
-        
       </Header>
 
       <section className="main main-form">
@@ -104,8 +107,9 @@ function CalculatorMediePage() {
             ) : (
               <></>
             )}
-            <div className="final">
-              <div button-container>
+            <hr />
+            <div className="final flex row">
+              <div className="button-container flex row">
                 <Button1
                   type="button"
                   click={(e) => {
@@ -114,22 +118,32 @@ function CalculatorMediePage() {
                     let suma = 0;
                     let suman = 0;
                     for (const [key, value] of Object.entries(data)) {
-                      if (value === -1) continue;
                       const weight = parseInt(value.weight);
-                      const val = parseInt(value.value);  
+                      const val = parseInt(value.value);
+                      if (val === -1) continue;
                       sumap += weight;
                       sumanp += val * weight;
                       suma += 1;
                       suman += val;
                     }
-                    const res = (sumanp / sumap + suman / suma) / 2;
-                    setMedia(res);
+                    setMediaA(suman / suma);
+                    setMediaP(sumanp / sumap);
                   }}
                 >
                   Calculează
                 </Button1>
               </div>
-              <div className="media-container">{media}</div>
+              <div className="media-container flex column">
+                <div className="sub-media">
+                  Media aritmetică: {mediaA.toFixed(2)}
+                </div>
+                <div className="sub-media">
+                  Media ponderată: {meadiaP.toFixed(2)}
+                </div>
+                <div className="media">
+                  Media: {media.toFixed(2)}
+                </div>
+                </div>
             </div>
           </div>
         </div>
