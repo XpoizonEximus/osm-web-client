@@ -28,7 +28,7 @@
 }
 
 #calculator-medie .form hr {
-  background-image: linear-gradient(to right, transparent, white, transparent);
+  --color: white;
 }
 
 #calculator-medie .form select {
@@ -119,6 +119,6 @@
   }
 
   #calculator-medie .form .final .media-container .media {
-  padding-right: 20px;
+    padding-right: 20px;
   }
 }

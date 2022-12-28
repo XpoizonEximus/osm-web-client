@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./navigation.css";
 
@@ -10,17 +10,21 @@ import menuLogo from "../../assets/photos/menu-logo.png";
 
 import { PATH } from "../../const/const";
 
-function Navigation(props) {
+import useWindowDimensions from "../../api/hooks/useWindowDimensions";
+
+function Navigation() {
   const [isMenuVisible, setMenuVisibility] = useState(false);
 
-  let fullscreenMenu = false;
-
-  if (window.innerWidth < 600) fullscreenMenu = true;
-  if (window.innerHeight < 800) fullscreenMenu = true;
+  const [fullscreenMenu, setFullscreenMenu] = useState(false);
+  const windowDimensions = useWindowDimensions();
+  useEffect(() => {
+    if (windowDimensions.width < 1150) setFullscreenMenu(true);
+    else setFullscreenMenu(false);
+  }, [windowDimensions]);
 
   return (
-    <>
-      <div id="navigation">
+    <div id="navigation">
+      <div className="relative-container">
         <div className="container flex row">
           <Link to="/">
             <div className="logo-container flex">
@@ -38,13 +42,13 @@ function Navigation(props) {
           </div>
           <div
             className="menu-icon-container flex"
-            onMouseEnter={(e) => {
+            onMouseEnter={() => {
               if (!fullscreenMenu) setMenuVisibility(true);
             }}
-            onMouseLeave={(e) => {
-              setMenuVisibility(false);
+            onMouseLeave={() => {
+              if (!fullscreenMenu) setMenuVisibility(false);
             }}
-            onClick={(e) => {
+            onClick={() => {
               if (fullscreenMenu) {
                 setMenuVisibility(!isMenuVisible);
                 window.scrollTo(0, 0);
@@ -75,18 +79,9 @@ function Navigation(props) {
             </NavigationLink>
           </div>
         </div>
-        {fullscreenMenu ? (
-          <></>
-        ) : (
-          <Menu isVisible={isMenuVisible} setVisibility={setMenuVisibility} />
-        )}
-      </div>
-      {fullscreenMenu ? (
         <Menu isVisible={isMenuVisible} setVisibility={setMenuVisibility} />
-      ) : (
-        <></>
-      )}
-    </>
+      </div>
+    </div>
   );
 }
 

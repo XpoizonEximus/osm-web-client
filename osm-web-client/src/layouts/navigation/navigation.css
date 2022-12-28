@@ -5,11 +5,13 @@
   top: 0;
   width: 100%;
   z-index: 10;
-
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-#navigation > .container {
+#navigation .relative-container {
+  position: relative;
+}
+
+#navigation .container {
   --padding: 40px;
   font-size: 1.2em;
   width: 100%;
@@ -17,6 +19,7 @@
   justify-content: flex-start;
   padding: 0px var(--padding) 0px var(--padding);
   background-color: var(--bar-color);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 #navigation .logo-container {
@@ -82,7 +85,7 @@
     display: flex;
   }
 
-  #navigation > .container {
+  #navigation .container {
     justify-content: space-between;
     --padding: 10px;
   }
